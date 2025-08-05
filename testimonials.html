@@ -3,7 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials | Acupuncture Stem Cell</title>
+    <title>Patient Testimonials | Dr. Yasmin Harounian L.Ac Acupuncture Los Angeles</title>
+    <meta name="description" content="Read authentic patient testimonials about Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles. Real stories of healing from pain, chronic conditions, and improved wellness.">
+    <meta name="keywords" content="acupuncture testimonials, Dr. Yasmin Harounian reviews, acupuncture los angeles reviews, patient testimonials acupuncture, healing testimonials">
+    <meta name="author" content="Dr. Yasmin Harounian L.Ac">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://acustem.com/testimonials">
+    <meta property="og:title" content="Patient Testimonials | Dr. Yasmin Harounian L.Ac Acupuncture Los Angeles">
+    <meta property="og:description" content="Read authentic patient testimonials about Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles. Real stories of healing and improved wellness.">
+    <meta property="og:image" content="https://acustem.com/images/acupuncture-testimonials.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://acustem.com/testimonials">
+    <meta property="twitter:title" content="Patient Testimonials | Dr. Yasmin Harounian L.Ac Acupuncture Los Angeles">
+    <meta property="twitter:description" content="Read authentic patient testimonials about Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles. Real stories of healing and improved wellness.">
+    <meta property="twitter:image" content="https://acustem.com/images/acupuncture-testimonials.jpg">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Acupuncture Stem Cell Therapy",
+        "description": "Expert acupuncture and stem cell therapy services in Los Angeles. Licensed practitioner Dr. Yasmin Harounian L.Ac provides acupuncture, cupping therapy, and consciousness therapy with house call availability.",
+        "url": "https://acustem.com",
+        "telephone": "+1-310-739-5866",
+        "email": "AcuStem@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "10940 Wilshire Blvd, Suite 710",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90024",
+            "addressCountry": "US"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Dr. Yasmin Harounian",
+            "jobTitle": "Licensed Acupuncturist",
+            "description": "Doctor of Eastern Medicine since 2001, specializing in acupuncture and stem cell activation therapy"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "25",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Dan Zimmerman"
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "reviewBody": "I have never been to acupuncture before and I was open minded going in but I am a firm believer in Dr. Yasmine!! I was in need of rotator cuff surgery and after two months with Dr. Yasmine my shoulder feels great and am pain free for the first time in years. She is truly amazing and am so glad I have her in my life!"
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sarah S."
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "reviewBody": "Dr. Yasmin is a true healer, she gave me my health & life back. She cured me with her gentle guidance she is truly gifted. The way she does acupuncture is really unique, she follows & trusts her mind & heart and miracles happen through her."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Grace R."
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "reviewBody": "Dr. Yasmin is an incredibly intuitive and spiritual healer with strong medical foundations as well. She understands the meridian pathways so intrinsically that the needles seem to guide her hand. Her treatments are painless and very very effective!"
+            }
+        ],
+        "openingHours": [
+            "Mo-Fr 09:00-19:00",
+            "Su 10:00-14:00"
+        ],
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, Credit Card, Insurance",
+        "currenciesAccepted": "USD",
+        "areaServed": {
+            "@type": "City",
+            "name": "Los Angeles"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "34.0522",
+                "longitude": "-118.2437"
+            },
+            "geoRadius": "50000"
+        }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -147,16 +261,51 @@
             display: block;
             border-bottom: none;
         }
-        
-        .cart-icon {
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            font-size: 1.5rem;
+
+        /* Mobile Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+            background: none;
+            border: none;
+            color: var(--background-light);
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--background-light);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
         }
 
         /* --- Testimonials Page Specific Styles --- */
+        .testimonials-intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .testimonials-intro p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: var(--light-text);
+        }
+
         .testimonials-grid {
             display: grid;
             grid-template-columns: 1fr 3fr;
@@ -164,30 +313,68 @@
             align-items: flex-start;
         }
 
+        .testimonial-image-container {
+            text-align: center;
+        }
+
         .testimonial-image-container img {
             width: 100%;
             max-width: 250px;
             height: auto;
+            border-radius: 8px;
+        }
+
+        .testimonials-list {
+            display: grid;
+            gap: 30px;
         }
 
         .testimonial-item {
-            margin-bottom: 30px;
+            background-color: var(--background-grey);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-green);
         }
 
         .testimonial-item h3 {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            color: var(--primary-green);
         }
 
-        .testimonial-item h3 a {
-            color: var(--primary-green);
-            text-decoration: none;
-        }
-        
         .testimonial-item p {
             color: var(--light-text);
             font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .cta-section {
+            background-color: var(--background-grey);
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .cta-button:hover {
+            background-color: #559e3c;
         }
 
         /* --- Footer --- */
@@ -202,101 +389,316 @@
         @media (max-width: 992px) {
             .testimonials-grid {
                 grid-template-columns: 1fr;
+                gap: 30px;
             }
             .testimonial-image-container {
-                display: none; /* Hide image on smaller screens to match layout */
+                order: -1;
+            }
+            .testimonial-image-container img {
+                max-width: 200px;
             }
         }
 
         @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
             .nav-links {
-                gap: 10px;
-            }
-            .nav-links a {
-                font-size: 0.8rem;
-            }
-            .cart-icon {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--primary-green);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links a {
+                font-size: 1rem;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+            }
+            
+            .nav-links .dropdown-content {
+                position: static;
+                background-color: rgba(255,255,255,0.1);
+                box-shadow: none;
+                margin-top: 10px;
+            }
+            
+            .nav-links .dropdown-content a {
+                color: var(--background-light);
+                border-bottom: none;
+            }
+            
             .section-title {
                 font-size: 1.5rem;
             }
             .section-title::before, .section-title::after {
                 width: 50px;
             }
+            .testimonial-item {
+                padding: 20px;
+            }
+            .testimonial-item h3 {
+                font-size: 1.1rem;
+            }
+            .testimonials-intro p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .testimonial-image-container img {
+                max-width: 150px;
+            }
+            .testimonial-item {
+                padding: 15px;
+            }
+            .testimonial-item h3 {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 30px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header class="main-header">
+    <header class="main-header" role="banner">
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">Acupuncture Stem Cell</a>
-                <nav class="main-nav">
+                <a href="index.html" class="logo" aria-label="Acupuncture Stem Cell Therapy - Home">Acupuncture Stem Cell</a>
+                <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li class="dropdown">
-                            <a href="#">Services ⌄</a>
-                             <div class="dropdown-content">
-                                <a href="#">Service 1</a>
-                                <a href="#">Service 2</a>
-                                <a href="#">Service 3</a>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">Services ⌄</a>
+                             <div class="dropdown-content" role="menu">
+                                <a href="acupunctureservice.html" role="menuitem">Acupuncture Therapy</a>
+                                <a href="electro.html" role="menuitem">Electroacupuncture</a>
+                                <a href="cupping.html" role="menuitem">Cupping Therapy</a>
+                                <a href="concioustherpy.html" role="menuitem">Consciousness Therapy</a>
+                                <a href="laser.html" role="menuitem">Laser Therapy</a>
+                                <a href="Shamanic.html" role="menuitem">Shamanic Healing</a>
                             </div>
                         </li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Conditions Treated</a></li>
-                        <li><a href="#" class="active">Testimonials</a></li>
-                        <li><a href="#">Schedule Appointments</a></li>
-                        <li><a href="#">Consciousness Therapy</a></li>
+                        <li><a href="Aboutus.html">About Us</a></li>
+                        <li><a href="Conditionstreated.html">Conditions Treated</a></li>
+                        <li><a href="testimonials.html" aria-current="page">Testimonials</a></li>
+                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
-                <div class="cart-icon">🛒</div>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="testimonials-section">
+    <main role="main">
+        <section class="testimonials-section" aria-labelledby="testimonials-title">
             <div class="container">
-                <h2 class="section-title">Testimonials</h2>
+                <h2 id="testimonials-title" class="section-title">Patient Testimonials</h2>
+                
+                <div class="testimonials-intro">
+                    <p>Read authentic testimonials from patients who have experienced the healing power of Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles. These real stories showcase the transformative effects of acupuncture on pain management, chronic conditions, and overall wellness.</p>
+                </div>
+
                 <div class="testimonials-grid">
                     <div class="testimonial-image-container">
-                        <img src="https://placehold.co/250x250/e0e5f0/a0a5b0?text=Healing+Hands" alt="Healing hands illustration">
+                        <img src="images/Screenshot 2025-08-04 at 19.01.55.png" alt="Dr. Yasmin Harounian L.Ac providing healing acupuncture treatments in her Los Angeles clinic" title="Healing Acupuncture Treatments by Dr. Yasmin Harounian" loading="lazy">
                     </div>
                     <div class="testimonials-list">
-                        <h3>Testimonials</h3>
                         <div class="testimonial-item">
-                            <h3><a href="#">Dan Zimmerman</a></h3>
-                            <p>I have never been to acupuncture before and I was open minded going in but I am a firm believer in Dr. Yasmine! I was in need of rotator cuff surgery and after two months with Dr. Yasmine my shoulder feels great and am pain free for the first time in years. She is truly amazing and am so glad I have her in my life!</p>
+                            <h3>Dan Zimmerman</h3>
+                            <p>I have never been to acupuncture before and I was open minded going in but I am a firm believer in Dr. Yasmine!! I was in need of rotator cuff surgery and after two months with Dr. Yasmine my shoulder feels great and am pain free for the first time in years. She is truly amazing and am so glad I have her in my life!</p>
                         </div>
+                        
                         <div class="testimonial-item">
-                            <h3><a href="#">PJ Burch</a></h3>
+                            <h3>Pj Burch</h3>
                             <p>I have been seeing Dr. Yasmin for over a month. And it has truly been life changing. She not only is helping me dramatically with some of my physical ailments but she is also reshaping my mind, and how to look at the world, and how to look within myself. I can't say enough about her. She is truly an amazing woman. You owe it to yourself to go and see her, she will put you on the path to true happiness.</p>
                         </div>
+                        
                         <div class="testimonial-item">
-                            <h3><a href="#">Sarah S.</a></h3>
-                            <p>Please read this review!! Sorry about my caption above but I had to get your attention. Long story short in 2018 I was hit by 3 chronic illnesses (Crohn's, Occipital Neuralgia, Fibromyalgia) I went through hell and back; multiple ICU visits, surgery, living on apiates, going through medical treatment in various countries & I had lost faith in life, until I met Dr. Yasmin's brother by coincidence (who also had Crohn's 30 years back and cured himself) I was so impressed by his story (please check out Saunabar.com) he is a very successful business man today because he only sells the truth. He advised me to see his sister and said "you will be cured" I had never heard of something like this & I was at a point that would obviously do anything to get my life back.</p>
+                            <h3>Sarah S.</h3>
+                            <p>Please read this review!! Sorry about my caption above but I had to get your attention. Long story short in 2018 I was hit by 3 chronic illnesses (Crohn's, Occipital Neuralgia, Fibromyalgia) I went through hell and back; multiple ICU visits, surgery, living on opiates, going through medical treatment in various countries & I had lost faith in life, until I met Dr. Yasmin's brother by coincidance (who also had Crohn's 30 years back and cured himself) I was so impressed by his story (please check out Saunabar.com) he is a very successful business man today because he only sells the truth. He advised me to see his sister and said "you will be cured" I had never heard of something like this & I was at a point that would obviously do anything to get my life back.</p>
+                            <p>The minute I entered her office I felt like I was already cured from everything, she gave me hope, which is something literally every (western medicine) doctor I saw didn't, Dr. Yasmin is a a true healer, she gave me my health & life back. She cured me with her gentle guidance she is truly gifted. The way she does acupuncture is really unique, she follows & trusts her mind & heart and miracles happen through her.</p>
+                            <p>She is so good to a point that her business cards are the only ones I carry with me at all time other than my own. I don't write many reviews but she deserves every word and it's all the truth. visit her and change your life, she is highly recommended.</p>
                         </div>
-                         <div class="testimonial-item">
-                            <h3><a href="#">Grace R.</a></h3>
+                        
+                        <div class="testimonial-item">
+                            <h3>Grace R.</h3>
                             <p>Dr. Yasmin is an incredibly intuitive and spiritual healer with strong medical foundations as well. She understands the meridian pathways so intrinsically that the needles seem to guide her hand. Her treatments are painless and very very effective! I don't usually post reviews, but as an acupuncture student who can somewhat distinguish the better healers, I really feel like I've found the BEST with Yasmin.</p>
                         </div>
-                         <div class="testimonial-item">
-                            <h3><a href="#">Maritza Figueroa</a></h3>
+                        
+                        <div class="testimonial-item">
+                            <h3>Maritza Figueroa</h3>
                             <p>Dr yasmin is truly an amazing acupuncturist and individual. I had not gone to the acupuncturist before until I went to see her. Let me tel you she is amazing! With just a couple sessions so began to feel less stressed, more energized at peace and overall feeling better. My sciatic pain, along with various joint pains has decreased immensely. I would urge anyone to give her a visit as you will not be disappointed by service and results.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Joan zimmerman</h3>
+                            <p>Dr Yasmin is very knowledgeable and kind. She immediately puts your mind at ease and allows you to start the healing process right away. For me it was after the first session I was hooked. She has also treated my 10 yr old with great success.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Denise Velazquez</h3>
+                            <p>Dr Yasmin H is such a blessing to my life. She just knows what I need and I always leave her office feeling so relaxed. She is very informative and provides a safe space to heal. I totally recommend her to all my friends and family. 😊</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Carlos Cortes</h3>
+                            <p>Dr. Yasmin has such a calming presence quite unlike that of any health professional I've ever met, regardless of field. She provides a level of comfort that truly brings relief prior to the session even beginning. She takes the time to really understand the symptoms you're experiencing and thoroughly explains the intention behind each acupuncture point being treated. Most importantly, she has a tremendous outlook on life, and in the time I've known her, she's brought me peace and kindness when I've needed it most.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Mike Piazza</h3>
+                            <p>Dr. Yasmin is remarkable. I never have visited an acupuncturist until I went to her for a session recently. I always have been curious about whether the treatments work. Now after a just a handful of treatment sessions I am already feeling changes. Good changes. From a sharper mind to an overall sense of peace and tranquility, my mind and body are working together in a way I cannot remember previously. I definitely feel healthier, my blood pressure is improving without more medications, and I now have a realistic goal of beginning to wean myself from some of the meds I have been on for years. I will post updates as my treatments with her continue. Suffice to say that already I am nearly pain free (My chronic back pain is nearly gone). I definitely am feeling better each day. I highly recommend going to Dr. Yasmin and decide for yourself. I am confident you will be as pleased with her as am I.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Rowena Riva Estrada</h3>
+                            <p>Dr. Jasmine is a natural healer. I suffer extreme anxiety. She cured excessive burping; fibroid almost gone; insomnia under control; and digestive issues resolving. Can't thank her enough.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Deborah Sharim</h3>
+                            <p>Dr Yasmin Harounian had a huge impact in my life through her service of acupuncture. I worked with her couples of times and this last time, I was going through so much in life and her acupuncture treatment helped me to come back to me and center and be connected to my body, soul and mind. I didn't know where to start and what to work on, she knew through her intuition what exactly to work on.. she is the best! Thank you Dr Harounian</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Marjan K.</h3>
+                            <p>Dr. Yasmin is not just a Chinese medicine practitioner, she has a holistic approach to healing. At the beginning of each session she asks me to express my feelings about the areas in my life I feel challenged. She is looking to find the root of my discomfort or pain. My lifestyle can be very hectic and demanding at times. Dr. Yasmin's approach helps tremendously to relieve the stress associated with my work. As you enter the exam room you are welcomed to a sanctuary. The aroma of the essential oils, healing stones, her super soft voice, her gentle pokes, her loving approach and the most calming music playing during each treatment takes you to a voyage of relaxation and comfort. She has helped me healing my physical discomforts and the way I process my thoughts. I recommend her to everyone I love and care. I'm forever grateful to here.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Ted B.</h3>
+                            <p>I've been having accupuncture treatments for years and Dr. Yasmin Harounian is just amazing. She really took the time to get to know me and my issue before we started and she is very, very unique in her technique. I'd give her 10 stars if I could.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Jina S.</h3>
+                            <p>I was so pleased to be treated by Dr. Yasmin Harounian. She is the most gentle and caring Dr. Ever. I had very bad back pain and could not move and had a fear of nedeles as well, but she gently helped me to go through the treatment and didn't take much to feel better. She is amazing Dr. I'm glad to know her for past a few years.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Elana F.Y.</h3>
+                            <p>I highly recommend Dr. Yasmin. I've been to other acupuncturists and she is by far my favorite. She helped me relieve pain I was having very quickly. She listened to my issue and concerns with genuine care and empathy. She looked at my overall health and well-being instead of just my symptoms. I was grateful for her vast knowledge and wisdom, and the advice she gave me for physical as well as spiritual matters.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Nikki P.</h3>
+                            <p>I was extremely pleased with the care and professionalism I received from Dr. Yasmin Harounian at Acupuncture Stem Cell. She was very gentle and made sure I was comfortable; since she knew I was slightly nervous. I can't thank Dr. Harounian enough for discovering the root cause of my skin and digestive issues. I would recommend her services to anyone.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Shannon L.</h3>
+                            <p>She is an incredible healer who I started seeing for back and neck pain but I have experienced whole body healing at a deeper level through her treatments. My entire body system is in balance, from monthly cycle pain to digestion to emotional. Seeing her is the highlight of my week and I'm so grateful she came into my life at the perfect time that I needed immense healing. I love that she lights candles & incense, plays soothing music, uses heat lamps and sheets so I'm always warm and comfortable. Every time I leave I am in complete bliss.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Ariel K.</h3>
+                            <p>My right hand (wo)man! What a majestic experience I have every time I see this wonderful doctor! Not only is she a great acupuncturist, but she also offers me great support-The way she talks with me during our acupuncture appointment, absolutely phenomenal! I have no anxiety about her "leaking" the information that I tell her because I feel like I can fully trust that what I tell her in that room will stay in that room.</p>
+                            <p>She also tells her patients to BLOW every time she inserts a needle. Me, being a man in my mid-20s, decided to act all "macho" and tried not to complain about the pain. However, when the pain became too unbearable, I decided to use her technique and it really helped! You can tell she cares about her patients...</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Nikita M.</h3>
+                            <p>I absolutely LOVE her. I was in a terrible car accident and I was seeing a chiropractor for treatment that was helping but I just couldn't get rid of this lower back pain. After seeing Dr. Yasmin Harounian twice a week for about a month or so, I was finally relieved of my lower back pain. Not to mention she worked on so many other things as well with my allergies and digestion. I can't wait to see her again. I will see her once a month now for treatment to make sure everything stays in tact. Life Saver.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Rowena E.</h3>
+                            <p>Dr. Jasmine is a natural healer. Clueless how acupuncture works. I was desperate for non pharmaceutical remedy for extreme anxiety disorder. She is very thorough in assessing underlying causes. She cured excessive burping, fibroid almost gone, sleeping more, and digestive issues resolving. I highly recommend her treatments. She is the best.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>David F.</h3>
+                            <p>I recently started seeing Dr. Yasmin Harounian to help me deal with chronic sinus issues. I had always done traditional (western type) medicine, which meant lots of prescriptions for antibiotics. Not good. I wanted to try something new (well old really. accupunture has been around for thousands of years -- yet new for me :-) Dr. Yasmin has been FANTASTIC! Firstly, she is a sweet and calming presence. She explained how acupuncture works (this is all new to me) and i have found my visits are actually beyond relaxing. I often fall into a deep sleep during the 30-45 min treatments. I have been feeling great ever since going (i go 2 times a week) to help build up my immune system, and I look forward to my treatments! Highly recommend!</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Dora K.</h3>
+                            <p>Having terrible back pain from epidural and having a c-section my doctors subscriped using Vicadine for two months. I was feeling the same, always depending on pain medication. It was my first time deciding to visit a Doctor that specialized in acupuncture. After 3 sessions of cupping and needling I was back to my old self. I stoped the pain medication and was able to hike three days a week. I can't imagine not having accupucture as part of my monthly wellness visit. Thank you for bringing happiness back to my life.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Phillip R.</h3>
+                            <p>I am surprised at how good I feel after a visit with Dr Yasmin. I did not understand all that could be accomplished by a visit since my sister made me go. I am so grateful that I had the opportunity to visit, become educated, comforted ( I was a little scared ) and walked away feeling better then when I came In. Thank you for not rushing me and allowing me to understand the process.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Dajana R</h3>
+                            <p>Dr. Yasmin is absolutely incredible! She's extremely knowledgeable in her field (and beyond). I've noticed a huge improvement in my health since starting care with her.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Paula B</h3>
+                            <p>Dr. Yasmin has loving energy you can feel the moment you meet her. This energy spills into her healing. She is knowledgeable and truly cares about your well-being.</p>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <h3>Libby B.</h3>
+                            <p>Just, wow. The minute I met Dr. Harounian, I knew I was in good hands. Her calm, holistic and careful approach to treatment alleviated the persistent pain I had been enduring for months in my jaw, neck and head. She identified the root cause of my pain when no other doctor could. Her expert training in acupuncture and consciousness from around the world gave her the ability to treat me fully.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title">Ready to Experience the Healing?</h2>
+                <p>Join hundreds of satisfied patients who have experienced the transformative power of Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles.</p>
+                <a href="index.html#appointments" class="cta-button" aria-label="Schedule acupuncture appointment with Dr. Yasmin Harounian">Schedule Your Appointment</a>
+            </div>
+        </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" role="contentinfo">
         <div class="container">
             <p>Consciousness Therapy, Articles</p>
         </div>
     </footer>
+
+         <script>
+         document.addEventListener('DOMContentLoaded', function() {
+             const hamburger = document.querySelector('.hamburger');
+             const navLinks = document.querySelector('.nav-links');
+
+             hamburger.addEventListener('click', function() {
+                 hamburger.classList.toggle('active');
+                 navLinks.classList.toggle('active');
+             });
+
+             // Close menu when a link is clicked (on mobile)
+             document.querySelectorAll('.nav-links a').forEach(link => {
+                 link.addEventListener('click', () => {
+                     hamburger.classList.remove('active');
+                     navLinks.classList.remove('active');
+                 });
+             });
+         });
+     </script>
 
 </body>
 </html>
