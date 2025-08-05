@@ -3,7 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acupuncture Stem Cell</title>
+    <title>Acupuncture & Stem Cell Therapy Los Angeles | Dr. Yasmin Harounian L.Ac</title>
+    <meta name="description" content="Expert acupuncture and stem cell therapy in Los Angeles. Dr. Yasmin Harounian L.Ac provides acupuncture, cupping therapy, and consciousness therapy. House calls available. Licensed practitioner serving Westwood and greater LA.">
+    <meta name="keywords" content="acupuncture los angeles, stem cell therapy, cupping therapy, consciousness therapy, Dr. Yasmin Harounian, L.Ac, westwood acupuncture, house calls acupuncture">
+    <meta name="author" content="Dr. Yasmin Harounian L.Ac">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://acustem.com/">
+    <meta property="og:title" content="Acupuncture & Stem Cell Therapy Los Angeles | Dr. Yasmin Harounian L.Ac">
+    <meta property="og:description" content="Expert acupuncture and stem cell therapy in Los Angeles. Licensed practitioner Dr. Yasmin Harounian L.Ac provides comprehensive holistic healing services.">
+    <meta property="og:image" content="https://acustem.com/images/acupuncture-hero.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://acustem.com/">
+    <meta property="twitter:title" content="Acupuncture & Stem Cell Therapy Los Angeles | Dr. Yasmin Harounian L.Ac">
+    <meta property="twitter:description" content="Expert acupuncture and stem cell therapy in Los Angeles. Licensed practitioner Dr. Yasmin Harounian L.Ac provides comprehensive holistic healing services.">
+    <meta property="twitter:image" content="https://acustem.com/images/acupuncture-hero.jpg">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Acupuncture Stem Cell Therapy",
+        "description": "Expert acupuncture and stem cell therapy services in Los Angeles. Licensed practitioner Dr. Yasmin Harounian L.Ac provides acupuncture, cupping therapy, and consciousness therapy with house call availability.",
+        "url": "https://acustem.com",
+        "telephone": "+1-310-739-5866",
+        "email": "AcuStem@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "10940 Wilshire Blvd, Suite 710",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90024",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "34.0522",
+            "longitude": "-118.2437"
+        },
+        "openingHours": [
+            "Mo-Fr 09:00-19:00",
+            "Su 10:00-14:00"
+        ],
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, Credit Card, Insurance",
+        "currenciesAccepted": "USD",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Acupuncture Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure",
+                        "name": "Acupuncture Initial Visit",
+                        "description": "Comprehensive acupuncture treatment with stem cell activation"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure",
+                        "name": "Acupuncture Follow Up",
+                        "description": "Follow-up acupuncture treatment session"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure",
+                        "name": "Cupping Therapy",
+                        "description": "Lymphatic cupping therapy for improved immunity and healing"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure",
+                        "name": "Consciousness Therapy",
+                        "description": "Faradarmani consciousness therapy for holistic healing"
+                    }
+                }
+            ]
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Dr. Yasmin Harounian",
+            "jobTitle": "Licensed Acupuncturist",
+            "description": "Doctor of Eastern Medicine since 2001, specializing in acupuncture and stem cell activation therapy"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Los Angeles"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "34.0522",
+                "longitude": "-118.2437"
+            },
+            "geoRadius": "50000"
+        }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -117,8 +226,10 @@
             transition: opacity 0.3s ease;
         }
         
-        .nav-links a:hover {
+        .nav-links a:hover,
+        .nav-links a.active {
             opacity: 0.8;
+            border-bottom: 2px solid var(--background-light);
         }
         
         .nav-links .dropdown {
@@ -143,6 +254,38 @@
             padding: 12px 16px;
             text-decoration: none;
             display: block;
+            border-bottom: none;
+        }
+
+        /* Mobile Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+            background: none;
+            border: none;
+            color: var(--background-light);
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--background-light);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
         }
         
         .cart-icon {
@@ -153,11 +296,10 @@
             font-size: 1.5rem;
         }
 
-
         /* --- Hero Section --- */
         .hero {
             height: 500px;
-            background: url('https://placehold.co/1200x500/e0e5f0/a0a5b0?text=Acupuncture+Background') center center/cover no-repeat;
+            background: url('images/Screenshot 2025-08-04 at 18.55.58.png') center center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -207,9 +349,12 @@
         
         .gallery-main-image img {
             max-width: 100%;
-            height: auto;
+            height: 400px;
+            width: 600px;
+            object-fit: cover;
             border: 1px solid var(--border-color);
             padding: 5px;
+            border-radius: 8px;
         }
         
         .gallery-thumbnails {
@@ -227,6 +372,7 @@
             cursor: pointer;
             border: 2px solid transparent;
             transition: border-color 0.3s ease;
+            border-radius: 4px;
         }
         
         .gallery-thumbnails img:hover,
@@ -394,21 +540,66 @@
                 margin-left: 5%;
                 margin-right: 5%;
             }
+            .gallery-main-image img {
+                height: 350px;
+                width: 100%;
+            }
         }
         
         @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
             .nav-links {
-                gap: 10px;
-            }
-            .nav-links a {
-                font-size: 0.8rem;
-            }
-            .cart-icon {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--primary-green);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links a {
+                font-size: 1rem;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+            }
+            
+            .nav-links .dropdown-content {
+                position: static;
+                background-color: rgba(255,255,255,0.1);
+                box-shadow: none;
+                margin-top: 10px;
+            }
+            
+            .nav-links .dropdown-content a {
+                color: var(--background-light);
+                border-bottom: none;
+            }
+            
             .hero {
                 height: auto;
                 padding: 40px 0;
+                background-position: center;
+            }
+            .hero-box {
+                margin: 0 20px;
+                padding: 30px;
+            }
+            .hero-box .phone {
+                font-size: 1.5rem;
+            }
+            .hero-box .address {
+                font-size: 1.1rem;
             }
             .section-title {
                 font-size: 1.5rem;
@@ -416,152 +607,216 @@
             .section-title::before, .section-title::after {
                 width: 50px;
             }
+            .gallery-main-image img {
+                height: 300px;
+                width: 100%;
+            }
+            .gallery-thumbnails {
+                gap: 8px;
+            }
+            .gallery-thumbnails img {
+                width: 60px;
+                height: 45px;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .service-item img {
+                width: 120px;
+                height: 120px;
+            }
+            .appointments-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .appointment-card {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .hero-box {
+                margin: 0 10px;
+                padding: 20px;
+            }
+            .hero-box .phone {
+                font-size: 1.3rem;
+            }
+            .hero-box .address {
+                font-size: 1rem;
+            }
+            .gallery-main-image img {
+                height: 250px;
+            }
+            .gallery-thumbnails img {
+                width: 50px;
+                height: 38px;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 30px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header class="main-header">
+    <header class="main-header" role="banner">
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">Acupuncture Stem Cell</a>
-                <nav class="main-nav">
-                    <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
+                <a href="#" class="logo" aria-label="Acupuncture Stem Cell Therapy - Home">Acupuncture Stem Cell</a>
+                <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="#" aria-current="page">Home</a></li>
                         <li class="dropdown">
-                            <a href="#">Services ⌄</a>
-                             <div class="dropdown-content">
-                                <a href="#">Service 1</a>
-                                <a href="#">Service 2</a>
-                                <a href="#">Service 3</a>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">Services ⌄</a>
+                             <div class="dropdown-content" role="menu">
+                                <a href="acupunctureservice.html" role="menuitem">Acupuncture Therapy</a>
+                                <a href="electro.html" role="menuitem">Electroacupuncture</a>
+                                <a href="cupping.html" role="menuitem">Cupping Therapy</a>
+                                <a href="concioustherpy.html" role="menuitem">Consciousness Therapy</a>
+                                <a href="laser.html" role="menuitem">Laser Therapy</a>
+                                <a href="Shamanic.html" role="menuitem">Shamanic Healing</a>
                             </div>
                         </li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Conditions Treated</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Schedule Appointments</a></li>
-                        <li><a href="#">Consciousness Therapy</a></li>
+                        <li><a href="Aboutus.html">About Us</a></li>
+                        <li><a href="Conditionstreated.html">Conditions Treated</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="#appointments">Schedule Appointments</a></li>
+                        <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
-                <div class="cart-icon">🛒</div>
+
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
+    <main role="main">
+        <section class="hero" aria-label="Hero section with contact information">
             <div class="hero-box">
-                <p class="phone">(310) 739-5866</p>
-                <p class="address">10940 Wilshire Blvd.<br>Suite 710 LA, CA 90024</p>
+                <p class="phone" aria-label="Phone number">(310) 739-5866</p>
+                <p class="address" aria-label="Office address">10940 Wilshire Blvd.<br>Suite 710 LA, CA 90024</p>
                 <p class="tagline">Energy Based Medicine - Quick recovery using natural methods</p>
             </div>
         </section>
 
-        <section id="gallery" class="gallery">
+        <section id="gallery" class="gallery" aria-labelledby="gallery-title">
             <div class="container">
-                <h2 class="section-title">Photo Gallery</h2>
+                <h2 id="gallery-title" class="section-title">Photo Gallery</h2>
                 <div class="gallery-container">
                     <div class="gallery-main-image">
-                        <img src="https://placehold.co/800x500/f0f0f0/ccc?text=Treatment+Room" id="main-gallery-image" alt="Main gallery view">
+                        <img src="images/Screenshot 2025-08-04 at 18.56.56.png" id="main-gallery-image" alt="Licensed Acupuncturist Dr. Yasmin Harounian in her professional treatment room at Westwood, Los Angeles clinic" title="Acupuncture Treatment Room - Dr. Yasmin Harounian L.Ac" class="active">
                     </div>
                 </div>
-                <div class="gallery-thumbnails" id="gallery-thumbs">
-                    <img src="https://placehold.co/100x75/e0e0e0/aaa?text=Thumb+1" alt="Thumbnail 1" class="active">
-                    <img src="https://placehold.co/100x75/d0d0d0/999?text=Thumb+2" alt="Thumbnail 2">
-                    <img src="https://placehold.co/100x75/c0c0c0/888?text=Thumb+3" alt="Thumbnail 3">
-                    <img src="https://placehold.co/100x75/b0b0b0/777?text=Thumb+4" alt="Thumbnail 4">
-                    <img src="https://placehold.co/100x75/a0a0a0/666?text=Thumb+5" alt="Thumbnail 5">
-                    <img src="https://placehold.co/800x500/f0f0f0/ccc?text=Treatment+Room" alt="Thumbnail 6">
-                    <img src="https://placehold.co/100x75/909090/555?text=Thumb+7" alt="Thumbnail 7">
+                <div class="gallery-thumbnails" id="gallery-thumbs" role="tablist" aria-label="Gallery thumbnails">
+                    <img src="images/Screenshot 2025-08-04 at 18.56.56.png" alt="Dr. Yasmin Harounian L.Ac in her acupuncture treatment room in Westwood, Los Angeles" class="active" role="tab" aria-selected="true" tabindex="0" title="Acupuncture Treatment Room">
+                    <img src="images/Screenshot 2025-08-04 at 18.57.17.png" alt="Dr. Yasmin Harounian preparing sterile acupuncture needles for treatment in Los Angeles" role="tab" aria-selected="false" tabindex="0" title="Acupuncture Needles Preparation">
+                    <img src="images/Screenshot 2025-08-04 at 18.57.35.png" alt="Professional acupuncture clinic interior at Dr. Harounian's Westwood, Los Angeles practice" role="tab" aria-selected="false" tabindex="0" title="Acupuncture Clinic Interior">
+                    <img src="images/Screenshot 2025-08-04 at 18.57.57.png" alt="Dr. Yasmin Harounian performing acupuncture treatment with stem cell activation therapy in Los Angeles" role="tab" aria-selected="false" tabindex="0" title="Acupuncture Treatment Session">
+                    <img src="images/Screenshot 2025-08-04 at 18.58.30.png" alt="Holistic healing environment at Dr. Yasmin Harounian's acupuncture practice in Westwood, Los Angeles" role="tab" aria-selected="false" tabindex="0" title="Holistic Healing Environment">
+                    <img src="images/Screenshot 2025-08-04 at 18.56.29.png" alt="Dr. Yasmin Harounian performing lymphatic cupping therapy treatment in Los Angeles" role="tab" aria-selected="false" tabindex="0" title="Cupping Therapy Treatment">
+                    <img src="images/Screenshot 2025-08-04 at 19.01.20.png" alt="Dr. Yasmin Harounian conducting consciousness therapy and Faradarmani healing session in Los Angeles" role="tab" aria-selected="false" tabindex="0" title="Consciousness Therapy Session">
                 </div>
             </div>
         </section>
 
-        <section class="welcome">
+        <section class="welcome" aria-labelledby="welcome-title">
             <div class="container">
-                <h2 class="section-title">Welcome</h2>
+                <h2 id="welcome-title" class="section-title">Welcome</h2>
                 <p>There's much to see here. So, take your time, look around, and learn all there is to know about us. We hope you enjoy our site and take a moment to drop us a line at <a href="mailto:AcuStem@gmail.com">AcuStem@gmail.com</a>.</p>
                 
                 <div class="services-grid">
                     <div class="service-item">
-                        <img src="https://placehold.co/150x150/e0e5f0/a0a5b0?text=Acupuncture" alt="Acupuncture">
+                        <img src="images/Screenshot 2025-08-04 at 18.57.57.png" alt="Dr. Yasmin Harounian L.Ac performing acupuncture treatment with stem cell activation therapy in her Los Angeles clinic" title="Acupuncture and Stem Cell Therapy by Dr. Yasmin Harounian" loading="lazy">
                         <h3>Activating Stem Cells WITH ACUPUNCTURE</h3>
                         <p>Acupuncture has an effect to promote healing by stimulating the body's own stem cells into action...</p>
                         <div class="details">
                             <p>Acupuncture points are the body's natural source of pluripotent stem cells. Acupuncture is a system that activates pluripotent stem cells. These cells live in the channels that act as a fiberoptic communication system which delivers messages.</p>
                         </div>
-                        <span class="show-more" onclick="toggleDetails(this)">+ Show More</span>
+                        <span class="show-more" onclick="toggleDetails(this)" role="button" tabindex="0" onkeypress="if(event.key==='Enter') toggleDetails(this)">+ Show More</span>
                     </div>
                     <div class="service-item">
-                        <img src="https://placehold.co/150x150/e0e5f0/a0a5b0?text=Cupping" alt="Cupping Therapy">
+                        <img src="images/Screenshot 2025-08-04 at 18.56.29.png" alt="Dr. Yasmin Harounian L.Ac performing lymphatic cupping therapy treatment session in Los Angeles" title="Cupping Therapy Treatment by Dr. Yasmin Harounian" loading="lazy">
                         <h3>LYMPHATIC CUPPING THERAPY</h3>
                         <p>Regular lymph cupping helps improve your immunity. The lymphatic system consists of lymphatic vessels...</p>
                         <div class="details">
                             <p>The lymph helps rid the body of waste and other unwanted materials from under the arm, groin, the tonsils, adenoids, spleen and the thymus are all part of the lymphatic system. The thymus is located in the chest.</p>
                         </div>
-                        <span class="show-more" onclick="toggleDetails(this)">+ Show More</span>
+                        <span class="show-more" onclick="toggleDetails(this)" role="button" tabindex="0" onkeypress="if(event.key==='Enter') toggleDetails(this)">+ Show More</span>
                     </div>
                     <div class="service-item">
-                        <img src="https://placehold.co/150x150/e0e5f0/a0a5b0?text=Healing" alt="Consciousness Therapy">
+                        <img src="images/Screenshot 2025-08-04 at 18.59.13.png" alt="Dr. Yasmin Harounian conducting consciousness therapy and Faradarmani healing session in Los Angeles" title="Consciousness Therapy by Dr. Yasmin Harounian" loading="lazy">
                         <h3>PERSIAN MYSTICISM / CONSCIOUSNESS THERAPY / FARADARMANI</h3>
                         <p>Faradarmani is a holistic healing modality based on the principles of consciousness, energy, and the interconnectedness...</p>
                         <div class="details">
                             <p>Faradarmani is considered a complementary or alternative therapy and aims to facilitate self-healing by accessing the individual's inherent abilities. The word "Faradarmani" translates to "The Art of Interuniversal Consciousness Healing".</p>
                         </div>
-                        <span class="show-more" onclick="toggleDetails(this)">+ Show More</span>
+                        <span class="show-more" onclick="toggleDetails(this)" role="button" tabindex="0" onkeypress="if(event.key==='Enter') toggleDetails(this)">+ Show More</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" aria-labelledby="contact-title">
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h2 class="section-title" style="justify-content: flex-start;">Contact Us</h2>
+                        <h2 id="contact-title" class="section-title" style="justify-content: flex-start;">Contact Us</h2>
                         <p><strong>Email:</strong> <a href="mailto:AcuStem@gmail.com">AcuStem@gmail.com</a></p>
                         <h3>ACUPUNCTURE STEM CELL</h3>
                         <p>10940 Wilshire Blvd, Suite 710 Los Angeles, CA 90024</p>
-                        <p><strong>Phone:</strong> (310) 739-5866</p>
+                        <p><strong>Phone:</strong> <a href="tel:+1-310-739-5866">(310) 739-5866</a></p>
                         <h3>Hours</h3>
                         <p>Monday-Friday: 9am-7pm<br>Saturday: Closed<br>Sunday: 10am-2pm</p>
+                        <p><strong>House Calls Available</strong> - Serving Westwood and greater Los Angeles area</p>
                     </div>
-                    <div class="map-placeholder"></div>
+                    <div class="map-placeholder" aria-label="Map showing office location at 10940 Wilshire Blvd, Suite 710, Los Angeles, CA 90024"></div>
                 </div>
             </div>
         </section>
 
-        <section class="connect">
+        <section class="connect" aria-labelledby="connect-title">
             <div class="container">
-                <h2 class="section-title">Connect With Us</h2>
+                <h2 id="connect-title" class="section-title">Connect With Us</h2>
                 <div class="social-icons">
-                     <a href="#" class="facebook" aria-label="Facebook">f</a>
-                     <a href="#" class="instagram" aria-label="Instagram">i</a>
-                     <a href="#" class="yelp" aria-label="Yelp">y</a>
+                     <a href="#" class="facebook" aria-label="Follow us on Facebook">f</a>
+                     <a href="#" class="instagram" aria-label="Follow us on Instagram">i</a>
+                     <a href="#" class="yelp" aria-label="Read our reviews on Yelp">y</a>
                 </div>
             </div>
         </section>
 
-        <section class="appointments">
+        <section id="appointments" class="appointments" aria-labelledby="appointments-title">
             <div class="container">
-                <h2 class="section-title">Online Appointments</h2>
+                <h2 id="appointments-title" class="section-title">Online Appointments</h2>
                 <div class="appointments-grid">
                     <div class="appointment-card">
                         <h3>Acupuncture Initial Visit</h3>
                         <p>1 hr | Price Varies</p>
-                        <a href="#" class="btn-book">BOOK</a>
+                        <a href="#" class="btn-book" aria-label="Book acupuncture initial visit with Dr. Yasmin Harounian">BOOK</a>
                     </div>
                     <div class="appointment-card">
                         <h3>Acupuncture Follow Up</h3>
                         <p>1 hr | Price Varies</p>
-                        <a href="#" class="btn-book">BOOK</a>
+                        <a href="#" class="btn-book" aria-label="Book acupuncture follow up visit with Dr. Yasmin Harounian">BOOK</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" role="contentinfo">
         <div class="container">
             <p>Consciousness Therapy, Articles</p>
         </div>
@@ -587,13 +842,40 @@
         for (let thumb of thumbnails) {
             thumb.addEventListener('click', function() {
                 // Set main image src to the clicked thumbnail's src
-                mainImage.src = this.src.replace('100x75', '800x500').replace('Thumb', 'Main');
+                mainImage.src = this.src;
                 
-                // Update active class
+                // Update active class and aria-selected
                 document.querySelector('.gallery-thumbnails img.active').classList.remove('active');
+                document.querySelector('.gallery-thumbnails img[aria-selected="true"]').setAttribute('aria-selected', 'false');
                 this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
+            });
+            
+            // Keyboard navigation for gallery
+            thumb.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
             });
         }
+
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
     </script>
 
 </body>
