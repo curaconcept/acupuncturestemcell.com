@@ -3,7 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Acupuncture Stem Cell</title>
+    <title>About Dr. Yasmin Harounian L.Ac | Acupuncture & Stem Cell Therapy Los Angeles</title>
+    <meta name="description" content="Meet Dr. Yasmin Harounian L.Ac, licensed acupuncturist in Los Angeles since 2001. Expert in acupuncture, stem cell therapy, and holistic healing. Serving Westwood and greater LA area with house calls available.">
+    <meta name="keywords" content="Dr. Yasmin Harounian, L.Ac, acupuncture los angeles, stem cell therapy, licensed acupuncturist, westwood acupuncture, holistic healing, eastern medicine">
+    <meta name="author" content="Dr. Yasmin Harounian L.Ac">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://acustem.com/about">
+    <meta property="og:title" content="About Dr. Yasmin Harounian L.Ac | Acupuncture & Stem Cell Therapy Los Angeles">
+    <meta property="og:description" content="Meet Dr. Yasmin Harounian L.Ac, licensed acupuncturist in Los Angeles since 2001. Expert in acupuncture, stem cell therapy, and holistic healing.">
+    <meta property="og:image" content="https://acustem.com/images/dr-yasmin-harounian-acupuncture.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://acustem.com/about">
+    <meta property="twitter:title" content="About Dr. Yasmin Harounian L.Ac | Acupuncture & Stem Cell Therapy Los Angeles">
+    <meta property="twitter:description" content="Meet Dr. Yasmin Harounian L.Ac, licensed acupuncturist in Los Angeles since 2001. Expert in acupuncture, stem cell therapy, and holistic healing.">
+    <meta property="twitter:image" content="https://acustem.com/images/dr-yasmin-harounian-acupuncture.jpg">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Acupuncture Stem Cell Therapy",
+        "description": "Expert acupuncture and stem cell therapy services in Los Angeles. Licensed practitioner Dr. Yasmin Harounian L.Ac provides acupuncture, cupping therapy, and consciousness therapy with house call availability.",
+        "url": "https://acustem.com",
+        "telephone": "+1-310-739-5866",
+        "email": "AcuStem@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "10940 Wilshire Blvd, Suite 710",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90024",
+            "addressCountry": "US"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Dr. Yasmin Harounian",
+            "jobTitle": "Licensed Acupuncturist",
+            "description": "Doctor of Eastern Medicine since 2001, specializing in acupuncture and stem cell activation therapy",
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Eastern Medicine Program"
+            },
+            "knowsAbout": ["Acupuncture", "Stem Cell Therapy", "Eastern Medicine", "Holistic Healing", "Cupping Therapy", "Consciousness Therapy"],
+            "hasCredential": "L.Ac",
+            "worksFor": {
+                "@type": "MedicalBusiness",
+                "name": "Acupuncture Stem Cell Therapy"
+            }
+        },
+        "employee": [
+            {
+                "@type": "Person",
+                "name": "Dr. Yasmin Harounian",
+                "jobTitle": "Licensed Acupuncturist",
+                "description": "Doctor of Eastern Medicine since 2001"
+            },
+            {
+                "@type": "Person",
+                "name": "Heathir Brown",
+                "jobTitle": "Craniosacral Therapist",
+                "description": "CD, CPDT, Craniosacral Therapist, Reiki Master with over a decade of experience"
+            }
+        ],
+        "openingHours": [
+            "Mo-Fr 09:00-19:00",
+            "Su 10:00-14:00"
+        ],
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, Credit Card, Insurance",
+        "currenciesAccepted": "USD",
+        "areaServed": {
+            "@type": "City",
+            "name": "Los Angeles"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "34.0522",
+                "longitude": "-118.2437"
+            },
+            "geoRadius": "50000"
+        }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -147,13 +237,36 @@
             display: block;
             border-bottom: none;
         }
-        
-        .cart-icon {
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            font-size: 1.5rem;
+
+        /* Mobile Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+            background: none;
+            border: none;
+            color: var(--background-light);
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--background-light);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
         }
 
         /* --- About Page Specific Styles --- */
@@ -264,7 +377,6 @@
             color: var(--light-text);
         }
 
-
         /* --- Footer --- */
         .main-footer {
             text-align: center;
@@ -287,73 +399,149 @@
             .bio-image {
                 margin-bottom: 30px;
             }
+            .promise-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 30px;
+            }
         }
         
         @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
             .nav-links {
-                gap: 10px;
-            }
-            .nav-links a {
-                font-size: 0.8rem;
-            }
-            .cart-icon {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--primary-green);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links a {
+                font-size: 1rem;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+            }
+            
+            .nav-links .dropdown-content {
+                position: static;
+                background-color: rgba(255,255,255,0.1);
+                box-shadow: none;
+                margin-top: 10px;
+            }
+            
+            .nav-links .dropdown-content a {
+                color: var(--background-light);
+                border-bottom: none;
+            }
+            
             .section-title {
                 font-size: 1.5rem;
             }
             .section-title::before, .section-title::after {
                 width: 50px;
             }
+            .promise-item img {
+                width: 150px;
+                height: 150px;
+            }
+            .bio-image img {
+                width: 200px;
+                height: 200px;
+            }
+            .bio-text h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .promise-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            .promise-item img {
+                width: 120px;
+                height: 120px;
+            }
+            .bio-image img {
+                width: 180px;
+                height: 180px;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 30px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header class="main-header">
+    <header class="main-header" role="banner">
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">Acupuncture Stem Cell</a>
-                <nav class="main-nav">
+                <a href="index.html" class="logo" aria-label="Acupuncture Stem Cell Therapy - Home">Acupuncture Stem Cell</a>
+                <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li class="dropdown">
-                            <a href="#">Services ⌄</a>
-                             <div class="dropdown-content">
-                                <a href="#">Service 1</a>
-                                <a href="#">Service 2</a>
-                                <a href="#">Service 3</a>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">Services ⌄</a>
+                             <div class="dropdown-content" role="menu">
+                                <a href="acupunctureservice.html" role="menuitem">Acupuncture Therapy</a>
+                                <a href="electro.html" role="menuitem">Electroacupuncture</a>
+                                <a href="cupping.html" role="menuitem">Cupping Therapy</a>
+                                <a href="concioustherpy.html" role="menuitem">Consciousness Therapy</a>
+                                <a href="laser.html" role="menuitem">Laser Therapy</a>
+                                <a href="Shamanic.html" role="menuitem">Shamanic Healing</a>
                             </div>
                         </li>
-                        <li><a href="#" class="active">About Us</a></li>
-                        <li><a href="#">Conditions Treated</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Schedule Appointments</a></li>
-                        <li><a href="#">Consciousness Therapy</a></li>
+                        <li><a href="Aboutus.html" aria-current="page">About Us</a></li>
+                        <li><a href="Conditionstreated.html">Conditions Treated</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
-                <div class="cart-icon">🛒</div>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="promise-section">
+    <main role="main">
+        <section class="promise-section" aria-labelledby="promise-title">
             <div class="container">
-                <h2 class="section-title">About Us</h2>
+                <h2 id="promise-title" class="section-title">About Us</h2>
                 <div class="promise-grid">
                     <div class="promise-item">
-                        <img src="https://placehold.co/180x180/e0e5f0/a0a5b0?text=Caring" alt="Caring For Your Health">
+                        <img src="images/Screenshot 2025-08-04 at 19.00.58.png" alt="Dr. Yasmin Harounian L.Ac providing caring and compassionate acupuncture treatment in her Los Angeles clinic" title="Caring Acupuncture Treatment by Dr. Yasmin Harounian" loading="lazy">
                         <h3>Caring For Your Health</h3>
                         <p>We understand that you are not living your best life possible unless your mind and body are completely healthy. That's why we take a holistic approach to preventing and reversing disease.</p>
                     </div>
                     <div class="promise-item">
-                        <img src="https://placehold.co/180x180/e0e5f0/a0a5b0?text=Healing" alt="Natural Healing">
+                        <img src="images/Screenshot 2025-08-04 at 19.01.20.png" alt="Dr. Yasmin Harounian L.Ac performing natural healing acupuncture therapy in Westwood, Los Angeles" title="Natural Healing Acupuncture by Dr. Yasmin Harounian" loading="lazy">
                         <h3>Natural Healing</h3>
                         <p>Our goal is to provide alternative medical care that will reverse and prevent disease using the fundamental healing principles of mind-body medicine. Our results prove the best way to heal the body is naturally.</p>
                     </div>
                     <div class="promise-item">
-                        <img src="https://placehold.co/180x180/e0e5f0/a0a5b0?text=Promise" alt="Our Promise to You">
+                        <img src="images/Screenshot 2025-08-04 at 19.00.58.png" alt="Dr. Yasmin Harounian L.Ac making a promise to provide exceptional acupuncture care and holistic healing in Los Angeles" title="Our Promise to You by Dr. Yasmin Harounian" loading="lazy">
                         <h3>Our Promise to You</h3>
                         <p>We care about your well being and will provide you with guidance, knowledge, and tools needed to be healthy. We are here to help you achieve optimal wellness.</p>
                     </div>
@@ -361,12 +549,12 @@
             </div>
         </section>
 
-        <section class="bio-section">
+        <section class="bio-section" aria-labelledby="dr-harounian-title">
             <div class="container">
-                <h2 class="section-title">About Us</h2>
+                <h2 id="dr-harounian-title" class="section-title">About Dr. Yasmin Harounian</h2>
                 <div class="bio-grid reverse">
                     <div class="bio-image">
-                        <img src="https://placehold.co/250x250/e0e5f0/a0a5b0?text=Dr.+Yasmin" alt="Dr. Yasmin Harounian">
+                        <img src="https://placehold.co/250x250/e0e5f0/a0a5b0?text=Dr.+Yasmin" alt="Dr. Yasmin Harounian L.Ac, licensed acupuncturist and expert in stem cell therapy in Los Angeles" title="Dr. Yasmin Harounian L.Ac - Licensed Acupuncturist Los Angeles">
                     </div>
                     <div class="bio-text">
                         <h2>Dr. Yasmin Harounian LAc.</h2>
@@ -384,14 +572,14 @@
             </div>
         </section>
 
-        <section class="bio-section alt-bg">
+        <section class="bio-section alt-bg" aria-labelledby="heathir-brown-title">
             <div class="container">
                 <div class="bio-grid">
                     <div class="bio-image">
-                        <img src="https://placehold.co/250x250/e0e5f0/a0a5b0?text=Heathir+Brown" alt="Heathir Brown">
+                        <img src="https://placehold.co/250x250/e0e5f0/a0a5b0?text=Heathir+Brown" alt="Heathir Brown CD, CPDT, Craniosacral Therapist and Reiki Master providing healing services in Los Angeles" title="Heathir Brown - Craniosacral Therapist Los Angeles">
                     </div>
                     <div class="bio-text">
-                        <h2>Heathir Brown, CD, CPDT, Craniosacral Therapist</h2>
+                        <h2 id="heathir-brown-title">Heathir Brown, CD, CPDT, Craniosacral Therapist</h2>
                         <p>Heathir Brown, CD, CPDT, Craniosacral Therapist, Reiki Master has been holding space and supporting clients for over a decade. As an intuitive healer, she weaves CranioSacral Therapy, Reiki energy healing, sound therapy, and other gentle modalities into her healing and coaching sessions as well as incorporating mindfulness throughout all of her work.</p>
                         <p><strong>She brings powerful transformation through healing and coaching services that meet your unique needs.</strong></p>
                         <p>Her clients often have doctors who have said "nothing is wrong" or simply treat the symptoms. Instead, Heathir helps her clients uncover the root cause and facilitate healing.</p>
@@ -408,20 +596,38 @@
             </div>
         </section>
         
-        <section class="cst-section">
+        <section class="cst-section" aria-labelledby="cst-title">
             <div class="container">
-                <h3>What is CranioSacral Therapy (CST)?</h3>
+                <h3 id="cst-title">What is CranioSacral Therapy (CST)?</h3>
                 <p>CranioSacral Therapy (CST) is a gentle approach that releases tensions deep in the body. It promotes well-being by eliminating pain and boosting health and immunity. It was pioneered and developed by Osteopathic Physician John E. Upledger after years of clinical testing and research at Michigan State University.</p>
             </div>
         </section>
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" role="contentinfo">
         <div class="container">
             <p>Consciousness Therapy, Articles</p>
         </div>
     </footer>
+
+         <script>
+         const hamburger = document.querySelector('.hamburger');
+         const navLinks = document.querySelector('.nav-links');
+
+         hamburger.addEventListener('click', () => {
+             hamburger.classList.toggle('active');
+             navLinks.classList.toggle('active');
+         });
+
+         // Close menu when a link is clicked (on mobile)
+         document.querySelectorAll('.nav-links a').forEach(link => {
+             link.addEventListener('click', () => {
+                 hamburger.classList.remove('active');
+                 navLinks.classList.remove('active');
+             });
+         });
+     </script>
 
 </body>
 </html>
