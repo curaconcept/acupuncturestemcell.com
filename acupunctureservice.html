@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acupuncture | Acupuncture Stem Cell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles & Variables --- */
+        :root {
+            --primary-green: #67b74c;
+            --dark-text: #333333;
+            --light-text: #555555;
+            --background-light: #ffffff;
+            --background-grey: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* --- Helper Classes --- */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .main-header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--background-light);
+            text-decoration: none;
+            flex-basis: 100%;
+            margin-bottom: 10px;
+        }
+
+        .main-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--background-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 5px 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.8;
+            border-bottom: 2px solid var(--background-light);
+        }
+        
+        .nav-links .dropdown {
+            position: relative;
+        }
+        
+        .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .nav-links .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: none;
+        }
+        
+        .cart-icon {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+
+        /* --- Acupuncture Page Specific Styles --- */
+        .acupuncture-intro-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .acupuncture-intro-text p {
+            margin-bottom: 15px;
+            color: var(--light-text);
+        }
+        
+        .acupuncture-intro-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .acupuncture-lists {
+            background-color: var(--background-grey);
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        
+        .acupuncture-list-container {
+             max-width: 800px;
+             margin: 0 auto;
+        }
+        
+        .acupuncture-list-container h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+         .acupuncture-list-container ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .acupuncture-list-container li {
+            color: var(--light-text);
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .acupuncture-list-container li::before {
+            content: '•';
+            color: var(--primary-green);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .comments-section {
+            background-color: var(--background-light);
+        }
+        
+        .comments-list {
+            list-style-type: decimal;
+            list-style-position: inside;
+        }
+        
+        .comments-list li {
+            margin-bottom: 15px;
+        }
+        
+        .comments-list a {
+            color: var(--primary-green);
+        }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            background-color: var(--background-grey);
+        }
+        
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .acupuncture-intro-grid {
+                grid-template-columns: 1fr;
+            }
+             .acupuncture-intro-image {
+                order: -1;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+            }
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+            .cart-icon {
+                display: none;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Acupuncture Stem Cell</a>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="active">Services ⌄</a>
+                             <div class="dropdown-content">
+                                <a href="#">Acupuncture</a>
+                                <a href="#">Service 2</a>
+                                <a href="#">Service 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Conditions Treated</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Schedule Appointments</a></li>
+                        <li><a href="#">Consciousness Therapy</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="acupuncture-intro">
+            <div class="container">
+                <h2 class="section-title">Acupuncture in Los Angeles</h2>
+                <div class="acupuncture-intro-grid">
+                    <div class="acupuncture-intro-text">
+                        <p>According to Eastern medical theory, every human body is a dynamic, self-contained system that is in constant interaction with the universe. The practice of acupuncture helps to enhance the movement of our energy, thereby bringing balance to the body and creating an optimal physical state that leads to an increased sense of well-being. Acupuncture promotes health, prevents disease, and even enhances beauty and delays aging.</p>
+                        <p>Acupuncture is a complete medical system that has been used for thousands of years on a large segment of the world's population making acupuncture the most widely practiced and thoroughly tested medicine in history with recorded clinical results. Dr. Harounian uses acupuncture to treat the underlying cause of a symptom and improve the quality of life.</p>
+                        <p>Acupuncture is a process which involves the insertion of pre-sterilized, nontoxic, and disposable fine needles into points that are strategic conductors of electromagnetic signals. The World Health Organization estimates that more people worldwide use acupuncture more often than any other form of health care.</p>
+                    </div>
+                    <div class="acupuncture-intro-image">
+                        <img src="https://placehold.co/400x300/e0e5f0/a0a5b0?text=Acupuncture+Treatment" alt="Acupuncture Treatment">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="acupuncture-lists">
+            <div class="container acupuncture-list-container">
+                <h3>We provide services throughout the Greater Los Angeles Area:</h3>
+                <ul>
+                    <li>Acupuncture in Malibu</li>
+                    <li>Acupuncture in Marina del Rey</li>
+                    <li>Acupuncture in Santa Monica</li>
+                    <li>Acupuncture in Culver City</li>
+                    <li>Acupuncture in Century City</li>
+                    <li>Acupuncture in Beverly Hills</li>
+                    <li>Acupuncture in Inglewood</li>
+                </ul>
+
+                <p>We treat sports injuries, inflammation, tendinitis, carpal tunnel, sciatica, neuropathy, lower back pain, knee pain, joint pain, chronic fatigue, Crohn's, Colitis, fibroids, papitation anxiety, fibromyalgia, frozen shoulder, shingles, IBS, depression, and many more. Reduce your stress today with Acupuncture in Los Angeles!</p>
+
+                <h3>Diseases, symptoms or conditions for which the therapeutic effect of acupuncture has been shown but for which further proof is needed:</h3>
+                <ul>
+                    <li>Abdominal pain (in acute gastroenteritis or due to gastrointestinal spasm)</li>
+                    <li>Acne vulgaris</li>
+                    <li>Alcohol dependence and detoxification</li>
+                    <li>Bell's palsy</li>
+                    <li>Bronchial asthma</li>
+                    <li>Cancer pain</li>
+                </ul>
+                
+                 <h3>12 Comments</h3>
+                <ol class="comments-list">
+                    <li>Pingback: <a href="#">Acupunctura - functioneaza? | Sound of Science</a></li>
+                    <li>Pingback: <a href="#">Acupuntura y cancer |</a></li>
+                    <li>Pingback: <a href="#">Irony Defined - Melissa Oltman - a personal journey</a></li>
+                    <li>Pingback: <a href="#">Alternative wellness: Acupuncture's many proven benefits - Sovereign Health Group</a></li>
+                    <li>Pingback: <a href="#">Treat Sports Injury and Pain with Acupuncture (Near Ramsey, MN)</a></li>
+                </ol>
+                
+                <h3>Acupuncture can:</h3>
+                 <ul>
+                    <li>Relieve pain</li>
+                    <li>Increase energy level</li>
+                    <li>Improve quality of sleep</li>
+                    <li>Increase ability to relax</li>
+                    <li>Increase ability to focus and concentrate</li>
+                    <li>Improve memory</li>
+                    <li>Boost immune system / illness prevention</li>
+                    <li>Enhance physical performance</li>
+                    <li>Enhance the creative process</li>
+                    <li>We specialize in non-narcotic practices in healing pain such as headaches, chronic pain, joint pain, and back pain. We use an array of proven methods to stimulate stem cells, chiropractic care, and rehabilitation. Our goal is to treat and relieve your pain permanently instead of using pharmaceuticals for temporary relief.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Consciousness Therapy, Articles</p>
+        </div>
+    </footer>
+
+</body>
+</html>

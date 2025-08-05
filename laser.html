@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Acupuncture | Acupuncture Stem Cell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles & Variables --- */
+        :root {
+            --primary-green: #67b74c;
+            --dark-text: #333333;
+            --light-text: #555555;
+            --background-light: #ffffff;
+            --background-grey: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* --- Helper Classes --- */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .main-header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--background-light);
+            text-decoration: none;
+            flex-basis: 100%;
+            margin-bottom: 10px;
+        }
+
+        .main-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--background-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 5px 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.8;
+            border-bottom: 2px solid var(--background-light);
+        }
+        
+        .nav-links .dropdown {
+            position: relative;
+        }
+        
+        .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .nav-links .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: none;
+        }
+        
+        .cart-icon {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+
+        /* --- Laser Acupuncture Page Specific Styles --- */
+        .laser-content-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+        
+        .laser-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .laser-text h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .laser-text p, .laser-full-width-text p {
+            color: var(--light-text);
+            margin-bottom: 15px;
+        }
+        
+        .laser-text ul, .laser-full-width-text ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+        
+        .laser-text li, .laser-full-width-text li {
+            color: var(--light-text);
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .laser-text li::before, .laser-full-width-text li::before {
+            content: '•';
+            color: var(--primary-green);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            background-color: var(--background-grey);
+        }
+        
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .laser-content-grid {
+                grid-template-columns: 1fr;
+            }
+            .laser-image {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .laser-image img {
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+            }
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+            .cart-icon {
+                display: none;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Acupuncture Stem Cell</a>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="active">Services ⌄</a>
+                             <div class="dropdown-content">
+                                <a href="#">Acupuncture</a>
+                                <a href="#">Electro-Acupuncture</a>
+                                <a href="#">Shamanic Healing</a>
+                                <a href="#">Laser Acupuncture</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Conditions Treated</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Schedule Appointments</a></li>
+                        <li><a href="#">Consciousness Therapy</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="laser-acupuncture-section">
+            <div class="container">
+                <h2 class="section-title">Laser Acupuncture</h2>
+                <div class="laser-content-grid">
+                    <div class="laser-image">
+                        <img src="https://placehold.co/400x300/e0e5f0/a0a5b0?text=Laser+Acupuncture" alt="Woman receiving laser acupuncture on her face">
+                    </div>
+                    <div class="laser-text">
+                        <h3>Needle-less Acupuncture</h3>
+                        <p>A relatively new method of stimulation, laser acupuncture uses low-energy laserbeams—instead of traditional acupuncture needles—to influence acupuncturepoints. The healing power of lasers was discovered over 40 years ago. Lasers are being used to accelerate healing, reduce inflammation, and reduce pain.</p>
+                        <ul>
+                            <li>Helps promote blood flow</li>
+                            <li>Aids in releasing your body's natural painkillers known as neurotransmitters and endorphins</li>
+                            <li>Arouses and releases serotonin that has antidepressant properties released in your brain</li>
+                            <li>Produces nerve fiber, that sends nerve impulses to the spinal cord</li>
+                            <li>Helps release ACTH (adrenocorticotropic hormone) that helps activate the adrenal gland and releases Cortisol into your bloodstream. This is a natural steroid substance with anti-inflammatory properties</li>
+                            <li>Assists in reducing inflammation, stress, and relaxes your muscles while restoring the homeostasis in your body</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="laser-full-width-text">
+                     <p>Acupuncture laser can help our body to regenerate cells, reduce inflammation, improve blood circulation, and most importantly reduce pain.</p>
+                     <ul>
+                        <li><strong>Repair and Regeneration:</strong> Joint and Muscle Reliever. It has repair and regeneration effects of cells of any part of the body.</li>
+                        <li><strong>Anti-inflammatory Action:</strong> With this red light therapy there is an anti-inflammatory effect which allows the improvement of blood circulation and improved blood flow.</li>
+                        <li><strong>Reduces Swelling:</strong> Swelling issues are reduce with use, and the sense that tightness is being lift occurs.</li>
+                        <li><strong>Analgesic Action:</strong> Various aches and pains can be prevented with regular use of this device.</li>
+                        <li><strong>Painless as well as Safe:</strong> Using this Pain Relief Therapy, is safe and a remarkably painless activity to help promote relaxation and better health.</li>
+                        <li><strong>Joint Tissue Repair:</strong> Using this device on various joints helps tissues and cells to grow as it helps to promote the repair of damaged tissues.</li>
+                     </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Consciousness Therapy, Articles</p>
+        </div>
+    </footer>
+
+</body>
+</html>

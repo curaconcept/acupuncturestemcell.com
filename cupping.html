@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBD Detox Cupping | Acupuncture Stem Cell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles & Variables --- */
+        :root {
+            --primary-green: #67b74c;
+            --dark-text: #333333;
+            --light-text: #555555;
+            --background-light: #ffffff;
+            --background-grey: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* --- Helper Classes --- */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .main-header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--background-light);
+            text-decoration: none;
+            flex-basis: 100%;
+            margin-bottom: 10px;
+        }
+
+        .main-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--background-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 5px 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.8;
+            border-bottom: 2px solid var(--background-light);
+        }
+        
+        .nav-links .dropdown {
+            position: relative;
+        }
+        
+        .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .nav-links .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: none;
+        }
+        
+        .cart-icon {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+
+        /* --- CBD Cupping Page Specific Styles --- */
+        .cupping-content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .cupping-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .cupping-text h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .cupping-text p {
+            color: var(--light-text);
+            margin-bottom: 15px;
+        }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            background-color: var(--background-grey);
+        }
+        
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .cupping-content-grid {
+                grid-template-columns: 1fr;
+            }
+            .cupping-image {
+                order: -1;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .cupping-image img {
+                max-width: 450px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+            }
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+            .cart-icon {
+                display: none;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Acupuncture Stem Cell</a>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="active">Services ⌄</a>
+                             <div class="dropdown-content">
+                                <a href="#">Acupuncture</a>
+                                <a href="#">Electro-Acupuncture</a>
+                                <a href="#">Shamanic Healing</a>
+                                <a href="#">Laser Acupuncture</a>
+                                <a href="#">CBD Detox Cupping</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Conditions Treated</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Schedule Appointments</a></li>
+                        <li><a href="#">Consciousness Therapy</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cupping-section">
+            <div class="container">
+                <h2 class="section-title">CBD Detox Cupping</h2>
+                <div class="cupping-content-grid">
+                    <div class="cupping-text">
+                        <h3>Cupping</h3>
+                        <p>Regular lymph cupping helps improve your immunity. The lymphatic system consists of lymphatic vessels that are connected to lymph nodes. The lymph helps rid the body of waste and other unwanted materials from under the arm, groin, the tonsils, adenoids, spleen and the thymus are all part of the lymphatic system. The thymus is located in the chest just above the heart. Increasing Lymphatic output increases the immune systems ability to detoxify the body. Lymph stagnation causes headaches that start as pressure. Dr. Harounian believes that a majority of diseases are due to lymphatic stagnation including arthritis and other various diseases that doctors have not linked to the lymphatic system yet.</p>
+                        <p>Cupping is a treatment technique that involves the application of glass cups with heat to create suction, thereby pulling toxins out of the body and stimulating local blood circulations. By recruiting red and white blood cells and stimulating blood flow to an area, allowing metabolism of nitrogenous wastes and reducing and eliminating pain and inflammation. It is effective for body aches, muscle pain, and relieving colds. Dr. Harounian incorporates the service of using CBD oil directly after cupping and detoxing the skin knowing that the skin absorbs the CBD oil with in 20 seconds. Resulting in a higher rate of absorption directly in the body.</p>
+                    </div>
+                    <div class="cupping-image">
+                        <img src="https://placehold.co/500x350/e0e5f0/a0a5b0?text=CBD+Detox+Cupping" alt="Woman receiving cupping therapy on her back">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Consciousness Therapy, Articles</p>
+        </div>
+    </footer>
+
+</body>
+</html>

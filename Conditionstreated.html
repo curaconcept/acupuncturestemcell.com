@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Treated | Acupuncture Stem Cell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles & Variables --- */
+        :root {
+            --primary-green: #67b74c;
+            --dark-text: #333333;
+            --light-text: #555555;
+            --background-light: #ffffff;
+            --background-grey: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* --- Helper Classes --- */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .main-header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--background-light);
+            text-decoration: none;
+            flex-basis: 100%;
+            margin-bottom: 10px;
+        }
+
+        .main-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--background-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 5px 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.8;
+            border-bottom: 2px solid var(--background-light);
+        }
+        
+        .nav-links .dropdown {
+            position: relative;
+        }
+        
+        .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .nav-links .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: none;
+        }
+        
+        .cart-icon {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+
+        /* --- Conditions Page Specific Styles --- */
+        .conditions-hero {
+            width: 100%;
+            height: 400px;
+            background: url('https://placehold.co/1200x400/000000/ffffff?text=Conditions+Treated') center center/cover no-repeat;
+        }
+
+        .conditions-content {
+            padding: 60px 0;
+        }
+        
+        .conditions-list-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .conditions-list-container h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .conditions-list-container h3:first-child {
+            margin-top: 0;
+        }
+        
+        .conditions-list-container ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .conditions-list-container li {
+            color: var(--light-text);
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .conditions-list-container li::before {
+            content: '•';
+            color: var(--primary-green);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            background-color: var(--background-grey);
+        }
+        
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+            }
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+            .cart-icon {
+                display: none;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 50px;
+            }
+            .conditions-hero {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Acupuncture Stem Cell</a>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Services ⌄</a>
+                             <div class="dropdown-content">
+                                <a href="#">Service 1</a>
+                                <a href="#">Service 2</a>
+                                <a href="#">Service 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#" class="active">Conditions Treated</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Schedule Appointments</a></li>
+                        <li><a href="#">Consciousness Therapy</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="conditions-hero"></div>
+
+        <section class="conditions-content">
+            <div class="container">
+                <h2 class="section-title">According to the National Institute of Health</h2>
+                <div class="conditions-list-container">
+                    <h3>Acupuncture Can Treat The Following:</h3>
+                    
+                    <h3>Eye, Ear, Nose, Throat Disorders</h3>
+                    <ul>
+                        <li>Sinusitis</li>
+                        <li>Sore throat</li>
+                        <li>Ringing in the Ears</li>
+                        <li>Dizziness</li>
+                        <li>Poor Eyesight</li>
+                    </ul>
+
+                    <h3>Circulatory Disorders</h3>
+                    <ul>
+                        <li>High Blood Pressure</li>
+                        <li>Angina Pectoris</li>
+                        <li>Arteriosclerosis</li>
+                        <li>Anemia</li>
+                    </ul>
+
+                    <h3>Gastrointestinal Disorders</h3>
+                    <ul>
+                        <li>Irritable Bowel Syndrome</li>
+                        <li>Spastic colon</li>
+                        <li>Colitis</li>
+                        <li>Constipation</li>
+                        <li>Diarrhea</li>
+                        <li>Food Allergies</li>
+                        <li>Ulcers</li>
+                        <li>Gastritis</li>
+                        <li>Abdominal Bloating</li>
+                        <li>Hemorrhoids</li>
+                    </ul>
+                    
+                    <h3>Acupuncture Also Treats</h3>
+                     <ul>
+                        <li>Chemotherapy/Radiation Side Effects</li>
+                        <li>Diabetes</li>
+                        <li>Dermatological Disorders</li>
+                        <li>Weight Control</li>
+                    </ul>
+
+                    <h3>Gynecological / Genitourinary Disorders</h3>
+                    <ul>
+                        <li>Premenstrual Syndrome (PMS)</li>
+                        <li>Irregular, Heavy or Painful Menstruation</li>
+                        <li>Endometriosis</li>
+                        <li>Menopause</li>
+                        <li>Fibroids</li>
+                        <li>Chronic Bladder Infection</li>
+                        <li>Complications in Pregnancy</li>
+                        <li>Morning Sickness</li>
+                        <li>Kidney Stones</li>
+                        <li>Impotence</li>
+                        <li>Infertility in Men and Women</li>
+                        <li>Sexual Dysfunction</li>
+                    </ul>
+                    
+                    <h3>Immune Disorders</h3>
+                    <ul>
+                        <li>Candida</li>
+                        <li>Chronic Fatigue</li>
+                        <li>HIV and AIDS</li>
+                        <li>Epstein Barr Virus</li>
+                        <li>Allergies</li>
+                        <li>Lupus</li>
+                        <li>MS</li>
+                        <li>Hepatitis</li>
+                    </ul>
+                    
+                    <h3>Addiction</h3>
+                    <ul>
+                        <li>Smoking Cessation</li>
+                        <li>Drugs</li>
+                        <li>Alcohol</li>
+                    </ul>
+
+                    <h3>Emotional and Psychological Disorders</h3>
+                    <ul>
+                        <li>Anxiety</li>
+                        <li>Insomnia</li>
+                        <li>Depression</li>
+                        <li>Stress</li>
+                    </ul>
+
+                    <h3>Musculoskeletal and Neurological Disorders</h3>
+                    <ul>
+                        <li>Arthritis</li>
+                        <li>Neuralgia</li>
+                        <li>Sciatica</li>
+                        <li>Back Pain</li>
+                        <li>Bursitis</li>
+                        <li>Tendonitis</li>
+                        <li>Stiff Neck</li>
+                        <li>Bells Palsy</li>
+                        <li>Trigeminal Neuralgia</li>
+                        <li>Headaches and Migraines</li>
+                        <li>Stroke</li>
+                        <li>Cerebral Palsy</li>
+                        <li>Sprains</li>
+                        <li>Muscle Spasms</li>
+                        <li>Shingles</li>
+                    </ul>
+
+                    <h3>Respiratory Disorders</h3>
+                    <ul>
+                        <li>Asthma</li>
+                        <li>Emphysema</li>
+                        <li>Bronchitis</li>
+                        <li>Colds and Flu</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Consciousness Therapy, Articles</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Acupuncture Stem Cell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles & Variables --- */
+        :root {
+            --primary-green: #67b74c;
+            --dark-text: #333333;
+            --light-text: #555555;
+            --background-light: #ffffff;
+            --background-grey: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* --- Helper Classes --- */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .main-header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--background-light);
+            text-decoration: none;
+            flex-basis: 100%;
+            margin-bottom: 10px;
+        }
+
+        .main-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--background-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 5px 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.8;
+            border-bottom: 2px solid var(--background-light);
+        }
+        
+        .nav-links .dropdown {
+            position: relative;
+        }
+        
+        .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .nav-links .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: none;
+        }
+        
+        .cart-icon {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+
+        /* --- Testimonials Page Specific Styles --- */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .testimonial-image-container img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+        }
+
+        .testimonial-item {
+            margin-bottom: 30px;
+        }
+
+        .testimonial-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .testimonial-item h3 a {
+            color: var(--primary-green);
+            text-decoration: none;
+        }
+        
+        .testimonial-item p {
+            color: var(--light-text);
+            font-size: 0.95rem;
+        }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            background-color: var(--background-grey);
+        }
+        
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            .testimonial-image-container {
+                display: none; /* Hide image on smaller screens to match layout */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+            }
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+            .cart-icon {
+                display: none;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Acupuncture Stem Cell</a>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Services ⌄</a>
+                             <div class="dropdown-content">
+                                <a href="#">Service 1</a>
+                                <a href="#">Service 2</a>
+                                <a href="#">Service 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Conditions Treated</a></li>
+                        <li><a href="#" class="active">Testimonials</a></li>
+                        <li><a href="#">Schedule Appointments</a></li>
+                        <li><a href="#">Consciousness Therapy</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-image-container">
+                        <img src="https://placehold.co/250x250/e0e5f0/a0a5b0?text=Healing+Hands" alt="Healing hands illustration">
+                    </div>
+                    <div class="testimonials-list">
+                        <h3>Testimonials</h3>
+                        <div class="testimonial-item">
+                            <h3><a href="#">Dan Zimmerman</a></h3>
+                            <p>I have never been to acupuncture before and I was open minded going in but I am a firm believer in Dr. Yasmine! I was in need of rotator cuff surgery and after two months with Dr. Yasmine my shoulder feels great and am pain free for the first time in years. She is truly amazing and am so glad I have her in my life!</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <h3><a href="#">PJ Burch</a></h3>
+                            <p>I have been seeing Dr. Yasmin for over a month. And it has truly been life changing. She not only is helping me dramatically with some of my physical ailments but she is also reshaping my mind, and how to look at the world, and how to look within myself. I can't say enough about her. She is truly an amazing woman. You owe it to yourself to go and see her, she will put you on the path to true happiness.</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <h3><a href="#">Sarah S.</a></h3>
+                            <p>Please read this review!! Sorry about my caption above but I had to get your attention. Long story short in 2018 I was hit by 3 chronic illnesses (Crohn's, Occipital Neuralgia, Fibromyalgia) I went through hell and back; multiple ICU visits, surgery, living on apiates, going through medical treatment in various countries & I had lost faith in life, until I met Dr. Yasmin's brother by coincidence (who also had Crohn's 30 years back and cured himself) I was so impressed by his story (please check out Saunabar.com) he is a very successful business man today because he only sells the truth. He advised me to see his sister and said "you will be cured" I had never heard of something like this & I was at a point that would obviously do anything to get my life back.</p>
+                        </div>
+                         <div class="testimonial-item">
+                            <h3><a href="#">Grace R.</a></h3>
+                            <p>Dr. Yasmin is an incredibly intuitive and spiritual healer with strong medical foundations as well. She understands the meridian pathways so intrinsically that the needles seem to guide her hand. Her treatments are painless and very very effective! I don't usually post reviews, but as an acupuncture student who can somewhat distinguish the better healers, I really feel like I've found the BEST with Yasmin.</p>
+                        </div>
+                         <div class="testimonial-item">
+                            <h3><a href="#">Maritza Figueroa</a></h3>
+                            <p>Dr yasmin is truly an amazing acupuncturist and individual. I had not gone to the acupuncturist before until I went to see her. Let me tel you she is amazing! With just a couple sessions so began to feel less stressed, more energized at peace and overall feeling better. My sciatic pain, along with various joint pains has decreased immensely. I would urge anyone to give her a visit as you will not be disappointed by service and results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Consciousness Therapy, Articles</p>
+        </div>
+    </footer>
+
+</body>
+</html>

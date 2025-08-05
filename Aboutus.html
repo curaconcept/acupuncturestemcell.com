@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Acupuncture Stem Cell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles & Variables --- */
+        :root {
+            --primary-green: #67b74c;
+            --dark-text: #333333;
+            --light-text: #555555;
+            --background-light: #ffffff;
+            --background-grey: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* --- Helper Classes --- */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .main-header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--background-light);
+            text-decoration: none;
+            flex-basis: 100%;
+            margin-bottom: 10px;
+        }
+
+        .main-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--background-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 5px 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.8;
+            border-bottom: 2px solid var(--background-light);
+        }
+        
+        .nav-links .dropdown {
+            position: relative;
+        }
+        
+        .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .nav-links .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: none;
+        }
+        
+        .cart-icon {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+
+        /* --- About Page Specific Styles --- */
+        .promise-section {
+            background-color: var(--background-light);
+        }
+
+        .promise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .promise-item img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .promise-item h3 {
+            font-size: 1.3rem;
+            color: var(--dark-text);
+            margin-bottom: 10px;
+        }
+
+        .promise-item p {
+            font-size: 0.95rem;
+            color: var(--light-text);
+        }
+
+        .bio-section {
+            padding: 60px 0;
+            background-color: var(--background-grey);
+        }
+        
+        .bio-section.alt-bg {
+             background-color: var(--background-light);
+        }
+
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .bio-grid.reverse {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .bio-image {
+            text-align: center;
+        }
+        
+        .bio-grid.reverse .bio-image {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+        
+        .bio-grid.reverse .bio-text {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .bio-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .bio-text h2 {
+            font-size: 1.8rem;
+            color: var(--dark-text);
+            margin-bottom: 15px;
+        }
+        
+        .bio-text p {
+            margin-bottom: 15px;
+            color: var(--light-text);
+        }
+        
+        .bio-text ul {
+            list-style-position: inside;
+            padding-left: 10px;
+            color: var(--light-text);
+        }
+        
+        .bio-text li {
+            margin-bottom: 5px;
+        }
+        
+        .cst-section {
+            text-align: center;
+        }
+        
+        .cst-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .cst-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--light-text);
+        }
+
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            background-color: var(--background-grey);
+        }
+        
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .bio-grid, .bio-grid.reverse {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .bio-grid.reverse .bio-image,
+            .bio-grid.reverse .bio-text {
+                grid-column: auto;
+                grid-row: auto;
+            }
+            .bio-image {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+            }
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+            .cart-icon {
+                display: none;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Acupuncture Stem Cell</a>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Services ⌄</a>
+                             <div class="dropdown-content">
+                                <a href="#">Service 1</a>
+                                <a href="#">Service 2</a>
+                                <a href="#">Service 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="active">About Us</a></li>
+                        <li><a href="#">Conditions Treated</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Schedule Appointments</a></li>
+                        <li><a href="#">Consciousness Therapy</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="promise-section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="promise-grid">
+                    <div class="promise-item">
+                        <img src="https://placehold.co/180x180/e0e5f0/a0a5b0?text=Caring" alt="Caring For Your Health">
+                        <h3>Caring For Your Health</h3>
+                        <p>We understand that you are not living your best life possible unless your mind and body are completely healthy. That's why we take a holistic approach to preventing and reversing disease.</p>
+                    </div>
+                    <div class="promise-item">
+                        <img src="https://placehold.co/180x180/e0e5f0/a0a5b0?text=Healing" alt="Natural Healing">
+                        <h3>Natural Healing</h3>
+                        <p>Our goal is to provide alternative medical care that will reverse and prevent disease using the fundamental healing principles of mind-body medicine. Our results prove the best way to heal the body is naturally.</p>
+                    </div>
+                    <div class="promise-item">
+                        <img src="https://placehold.co/180x180/e0e5f0/a0a5b0?text=Promise" alt="Our Promise to You">
+                        <h3>Our Promise to You</h3>
+                        <p>We care about your well being and will provide you with guidance, knowledge, and tools needed to be healthy. We are here to help you achieve optimal wellness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bio-section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="bio-grid reverse">
+                    <div class="bio-image">
+                        <img src="https://placehold.co/250x250/e0e5f0/a0a5b0?text=Dr.+Yasmin" alt="Dr. Yasmin Harounian">
+                    </div>
+                    <div class="bio-text">
+                        <h2>Dr. Yasmin Harounian LAc.</h2>
+                        <p>Dr. Yasmin Harounian is a doctor of eastern medicine since 2001. She graduated with honors in eastern medicine, and was asked to teach before she graduated due to her results in the clinic as an intern. She was the founder of Co-Creative Synergy, an integrative holistic practice, and taught both in the U.S. and Israel...</p>
+                        <p>Combining her education and experience with a strong sense of intuition, she provides services that are empowering, enlightening, transformative, and healing. Seeing the vast changes in medicine has inspired her to honor her gifts of balancing health and wholeness for clients through activating stem cells for faster regeneration and rejuvenation...</p>
+                        <p>Acupuncture offers a holistic approach to illness which links the body/mind/emotions, and effectively treats many common ailments. The World Health Organization recommends acupuncture as an effective treatment for over 150 medical ailments...</p>
+                        <ul>
+                            <li>Fibromyalgia, Sciatica, Back, Neck, Knee Pain, Carpal Tunnel</li>
+                            <li>Anxiety, Depression, Sinusitis, PMS</li>
+                            <li>Crohn's, Colitis, Prolapsed Uterus</li>
+                            <li>Fibroids, Cysts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bio-section alt-bg">
+            <div class="container">
+                <div class="bio-grid">
+                    <div class="bio-image">
+                        <img src="https://placehold.co/250x250/e0e5f0/a0a5b0?text=Heathir+Brown" alt="Heathir Brown">
+                    </div>
+                    <div class="bio-text">
+                        <h2>Heathir Brown, CD, CPDT, Craniosacral Therapist</h2>
+                        <p>Heathir Brown, CD, CPDT, Craniosacral Therapist, Reiki Master has been holding space and supporting clients for over a decade. As an intuitive healer, she weaves CranioSacral Therapy, Reiki energy healing, sound therapy, and other gentle modalities into her healing and coaching sessions as well as incorporating mindfulness throughout all of her work.</p>
+                        <p><strong>She brings powerful transformation through healing and coaching services that meet your unique needs.</strong></p>
+                        <p>Her clients often have doctors who have said "nothing is wrong" or simply treat the symptoms. Instead, Heathir helps her clients uncover the root cause and facilitate healing.</p>
+                        <ul>
+                            <li>Headaches, Neck & Jaw Pain</li>
+                            <li>Hormone Imbalance & Infertility</li>
+                            <li>Pregnancy discomfort, and breech presentations</li>
+                            <li>Postpartum mood disorders</li>
+                            <li>Lactation & Latch</li>
+                            <li>Autism, ADHD, & Sensory Processing Disorder</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cst-section">
+            <div class="container">
+                <h3>What is CranioSacral Therapy (CST)?</h3>
+                <p>CranioSacral Therapy (CST) is a gentle approach that releases tensions deep in the body. It promotes well-being by eliminating pain and boosting health and immunity. It was pioneered and developed by Osteopathic Physician John E. Upledger after years of clinical testing and research at Michigan State University.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Consciousness Therapy, Articles</p>
+        </div>
+    </footer>
+
+</body>
+</html>
