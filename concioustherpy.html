@@ -3,7 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consciousness Therapy | Acupuncture Stem Cell</title>
+    <title>Consciousness Therapy & Faradarmani | Dr. Yasmin Harounian L.Ac Los Angeles</title>
+    <meta name="description" content="Experience Faradarmani consciousness therapy with Dr. Yasmin Harounian L.Ac in Los Angeles. Holistic healing modality based on consciousness, energy, and mind-body interconnectedness. Non-contact therapy for self-healing.">
+    <meta name="keywords" content="consciousness therapy, Faradarmani, Dr. Yasmin Harounian, holistic healing, energy therapy, mind body healing, Los Angeles consciousness therapy, Persian mysticism">
+    <meta name="author" content="Dr. Yasmin Harounian L.Ac">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://acustem.com/consciousness-therapy">
+    <meta property="og:title" content="Consciousness Therapy & Faradarmani | Dr. Yasmin Harounian L.Ac Los Angeles">
+    <meta property="og:description" content="Experience Faradarmani consciousness therapy with Dr. Yasmin Harounian L.Ac in Los Angeles. Holistic healing modality based on consciousness, energy, and mind-body interconnectedness.">
+    <meta property="og:image" content="https://acustem.com/images/consciousness-therapy.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://acustem.com/consciousness-therapy">
+    <meta property="twitter:title" content="Consciousness Therapy & Faradarmani | Dr. Yasmin Harounian L.Ac Los Angeles">
+    <meta property="twitter:description" content="Experience Faradarmani consciousness therapy with Dr. Yasmin Harounian L.Ac in Los Angeles. Holistic healing modality based on consciousness, energy, and mind-body interconnectedness.">
+    <meta property="twitter:image" content="https://acustem.com/images/consciousness-therapy.jpg">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Acupuncture Stem Cell Therapy",
+        "description": "Expert acupuncture and stem cell therapy services in Los Angeles. Licensed practitioner Dr. Yasmin Harounian L.Ac provides acupuncture, cupping therapy, and consciousness therapy with house call availability.",
+        "url": "https://acustem.com",
+        "telephone": "+1-310-739-5866",
+        "email": "AcuStem@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "10940 Wilshire Blvd, Suite 710",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90024",
+            "addressCountry": "US"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Dr. Yasmin Harounian",
+            "jobTitle": "Licensed Acupuncturist",
+            "description": "Doctor of Eastern Medicine since 2001, specializing in acupuncture and stem cell activation therapy"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Consciousness Therapy Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure",
+                        "name": "Faradarmani Consciousness Therapy",
+                        "description": "Holistic healing modality based on consciousness, energy, and mind-body interconnectedness. Non-contact therapy for self-healing and energy balance."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure",
+                        "name": "Energy Healing Session",
+                        "description": "20-30 minute sessions focusing on consciousness and energy healing for stress relief, pain management, and overall wellness"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure",
+                        "name": "Mind-Body Healing",
+                        "description": "Therapeutic sessions that address physical, emotional, and psychological imbalances through consciousness-based healing"
+                    }
+                }
+            ]
+        },
+        "medicalSpecialty": [
+            {
+                "@type": "MedicalSpecialty",
+                "name": "Consciousness Therapy",
+                "description": "Faradarmani consciousness therapy and energy healing"
+            },
+            {
+                "@type": "MedicalSpecialty",
+                "name": "Holistic Healing",
+                "description": "Mind-body healing through consciousness and energy therapy"
+            }
+        ],
+        "openingHours": [
+            "Mo-Fr 09:00-19:00",
+            "Su 10:00-14:00"
+        ],
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, Credit Card, Insurance",
+        "currenciesAccepted": "USD",
+        "areaServed": {
+            "@type": "City",
+            "name": "Los Angeles"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "34.0522",
+                "longitude": "-118.2437"
+            },
+            "geoRadius": "50000"
+        }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -148,12 +256,35 @@
             border-bottom: none;
         }
         
-        .cart-icon {
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            font-size: 1.5rem;
+        /* Mobile Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+            background: none;
+            border: none;
+            color: var(--background-light);
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--background-light);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
         }
 
         /* --- Consciousness Therapy Page Styles --- */
@@ -162,29 +293,58 @@
             justify-content: center;
             align-items: center;
             padding: 40px 0;
+            position: relative;
         }
         
         .therapy-hero img {
             max-width: 100%;
             height: auto;
             max-height: 400px;
+            border-radius: 8px;
+        }
+
+        .therapy-hero-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 2;
+        }
+
+        .therapy-hero-overlay h1 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .therapy-hero-overlay p {
+            color: white;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+            margin: 10px 0 0 0;
         }
 
         .therapy-content-grid {
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 50px;
-            align-items: center;
+            align-items: start;
         }
 
         .therapy-text h3 {
             font-size: 1.3rem;
             margin-bottom: 15px;
+            color: var(--primary-green);
         }
         
         .therapy-text p {
             color: var(--light-text);
             margin-bottom: 15px;
+            line-height: 1.6;
         }
 
         .therapy-image img {
@@ -193,6 +353,53 @@
             border-radius: 8px;
         }
 
+        .benefits-section {
+            background-color: var(--background-grey);
+            margin-top: 40px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .benefit-item {
+            background-color: var(--background-light);
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid var(--primary-green);
+        }
+
+        .benefit-item h4 {
+            color: var(--primary-green);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .cta-button:hover {
+            background-color: #559e3c;
+        }
 
         /* --- Footer --- */
         .main-footer {
@@ -211,91 +418,239 @@
                 order: -1;
                 margin-bottom: 30px;
             }
+            .therapy-hero img {
+                max-height: 300px;
+            }
+            .therapy-hero-overlay h1 {
+                font-size: 2rem;
+            }
+            .therapy-hero-overlay p {
+                font-size: 1rem;
+            }
         }
 
         @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
             .nav-links {
-                gap: 10px;
-            }
-            .nav-links a {
-                font-size: 0.8rem;
-            }
-            .cart-icon {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--primary-green);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links a {
+                font-size: 1rem;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+            }
+            
+            .nav-links .dropdown-content {
+                position: static;
+                background-color: rgba(255,255,255,0.1);
+                box-shadow: none;
+                margin-top: 10px;
+            }
+            
+            .nav-links .dropdown-content a {
+                color: var(--background-light);
+                border-bottom: none;
+            }
+            
             .section-title {
                 font-size: 1.5rem;
             }
             .section-title::before, .section-title::after {
                 width: 50px;
             }
+            .therapy-hero img {
+                max-height: 250px;
+            }
+            .therapy-hero-overlay h1 {
+                font-size: 1.8rem;
+            }
+            .therapy-hero-overlay p {
+                font-size: 0.9rem;
+            }
+            .therapy-text h3 {
+                font-size: 1.2rem;
+            }
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .therapy-hero img {
+                max-height: 200px;
+            }
+            .therapy-hero-overlay h1 {
+                font-size: 1.5rem;
+            }
+            .therapy-hero-overlay p {
+                font-size: 0.8rem;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 30px;
+            }
+            .therapy-text h3 {
+                font-size: 1.1rem;
+            }
+            .benefit-item {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header class="main-header">
+    <header class="main-header" role="banner">
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">Acupuncture Stem Cell</a>
-                <nav class="main-nav">
+                <a href="index.html" class="logo" aria-label="Acupuncture Stem Cell Therapy - Home">Acupuncture Stem Cell</a>
+                <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li class="dropdown">
-                            <a href="#">Services ⌄</a>
-                             <div class="dropdown-content">
-                                <a href="#">Service 1</a>
-                                <a href="#">Service 2</a>
-                                <a href="#">Service 3</a>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">Services ⌄</a>
+                             <div class="dropdown-content" role="menu">
+                                <a href="acupunctureservice.html" role="menuitem">Acupuncture Therapy</a>
+                                <a href="electro.html" role="menuitem">Electroacupuncture</a>
+                                <a href="cupping.html" role="menuitem">Cupping Therapy</a>
+                                <a href="concioustherpy.html" role="menuitem">Consciousness Therapy</a>
+                                <a href="laser.html" role="menuitem">Laser Therapy</a>
+                                <a href="Shamanic.html" role="menuitem">Shamanic Healing</a>
                             </div>
                         </li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Conditions Treated</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Schedule Appointments</a></li>
-                        <li><a href="#" class="active">Consciousness Therapy</a></li>
+                        <li><a href="Aboutus.html">About Us</a></li>
+                        <li><a href="Conditionstreated.html">Conditions Treated</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="concioustherpy.html" aria-current="page">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
-                <div class="cart-icon">🛒</div>
+
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="therapy-hero">
-            <img src="https://placehold.co/600x400/e0e5f0/a0a5b0?text=Consciousness+Therapy" alt="Consciousness Therapy">
-        </section>
-
-        <section class="persian-mysticism">
+    <main role="main">
+        <section class="therapy-hero" aria-labelledby="therapy-hero-title">
             <div class="container">
-                <h2 class="section-title">PERSIAN MYSTICISM / FARADARMANI</h2>
+                <img src="images/Screenshot 2025-08-04 at 19.02.25.png" alt="Dr. Yasmin Harounian L.Ac providing consciousness therapy and Faradarmani healing in her Los Angeles clinic" title="Consciousness Therapy by Dr. Yasmin Harounian" loading="lazy">
+                <div class="therapy-hero-overlay">
+                    <h1>CONSCIOUSNESS<br>THERAPY</h1>
+                    <p>Dr. Yasmin Harounian L.Ac</p>
+                </div>
             </div>
         </section>
 
-        <section class="consciousness-treatment" style="padding-top: 0;">
+        <section class="persian-mysticism" aria-labelledby="persian-mysticism-title">
             <div class="container">
-                <h2 class="section-title">CONSCIOUSNESS ENERGY TREATMENT</h2>
+                <h2 id="persian-mysticism-title" class="section-title">PERSIAN MYSTICISM / FARADARMANI</h2>
+            </div>
+        </section>
+
+        <section class="consciousness-treatment" style="padding-top: 0;" aria-labelledby="consciousness-treatment-title">
+            <div class="container">
+                <h2 id="consciousness-treatment-title" class="section-title">CONSCIOUSNESS ENERGY TREATMENT</h2>
                 <div class="therapy-content-grid">
                     <div class="therapy-text">
                         <h3>Additional Information</h3>
-                        <p>Faradarmani is a holistic healing modality, based on the principles of consciousness, energy, and the interconnectedness of the mind and body. Faradarmani is considered a complementary or alternative therapy and aims to facilitate self-healing by accessing the individual's inherent abilities.</p>
+                        <p>Faradarmani is a holistic healing modality based on the principles of consciousness, energy, and the interconnectedness of the mind and body. Faradarmani is considered a complementary or alternative therapy and aims to facilitate self-healing by accessing the individual's inherent abilities.</p>
                         <p>The word "Faradarmani" translates to "The Art of Consciousness and Energy." According to its proponents, Faradarmani works on the principle that each person possesses an innate healing power within themselves. The practice focuses on activating and harnessing this self-healing ability to address physical, emotional, and psychological imbalances.</p>
                         <p>In Faradarmani, the practitioner acts as a facilitator rather than a healer, creating a supportive environment for the individual to connect with their inner healing resources. The practice does not involve physical contact or the use of any tools or substances. Instead, it emphasizes intention, attention, and the power of consciousness.</p>
                         <p>During a Faradarmani session, the practitioner may guide the individual to access their subconscious mind, explore their emotions, and become aware of their thoughts and beliefs. By doing so, it is believed that the individual can identify and release energetic blockages or imbalances that contribute to illness or disharmony. The process aims to promote self-awareness, self-empowerment, and a deeper understanding of oneself.</p>
+                        <p>Patients can feel the scanning as pain, a spasm, a sensation of hot or cold, of seeing color or lights, feeling sore, an itch, etc., with a session typically lasting 20 to 30 minutes. A number of benefits are commonly reported by patients, such as feeling noticeably relaxed, higher energy levels, less stress, pain relief, and an overall greater sense of well-being this healing modality has been developed by a Persian scientist Mohammad Ali Taheri.</p>
+                        <p>The practical aspect is made possible through establishing a form of link or connection (Ettesal) between human (as constituent-consciousness), and the "Interuniversal Consciousness" or "Interuniversal Internet" (as the whole consciousness) Establishing such connection can accomplish affairs and bring about results that man is not capable of attaining singlehandedly and through his own abilities. Since Halqeh mysticism embraces all human beings, everybody</p>
                     </div>
                     <div class="therapy-image">
-                        <img src="https://placehold.co/400x300/e0e5f0/a0a5b0?text=Healing+Touch" alt="Healing Touch">
+                        <img src="images/Screenshot 2025-08-04 at 19.02.39.png" alt="Dr. Yasmin Harounian L.Ac performing healing touch and energy therapy in Los Angeles" title="Healing Touch Energy Therapy by Dr. Yasmin Harounian" loading="lazy">
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="benefits-section" aria-labelledby="benefits-title">
+            <div class="container">
+                <h2 id="benefits-title" class="section-title">Benefits of Consciousness Therapy</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h4>Stress Relief</h4>
+                        <p>Experience deep relaxation and reduced stress levels through consciousness-based healing</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Energy Balance</h4>
+                        <p>Restore natural energy flow and balance through consciousness therapy sessions</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Pain Management</h4>
+                        <p>Address physical discomfort and pain through consciousness and energy healing</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Emotional Wellness</h4>
+                        <p>Promote emotional balance and psychological well-being through mind-body healing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title">Ready to Experience Consciousness Therapy?</h2>
+                <p>Discover the transformative power of Faradarmani consciousness therapy with Dr. Yasmin Harounian L.Ac in Los Angeles. Experience holistic healing through consciousness and energy therapy.</p>
+                <a href="index.html#appointments" class="cta-button" aria-label="Schedule consciousness therapy appointment with Dr. Yasmin Harounian">Schedule Your Session</a>
+            </div>
+        </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" role="contentinfo">
         <div class="container">
             <p>Consciousness Therapy, Articles</p>
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
