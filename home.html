@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acupuncture Stem Cell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles & Variables --- */
+        :root {
+            --primary-green: #67b74c;
+            --dark-text: #333333;
+            --light-text: #555555;
+            --background-light: #ffffff;
+            --background-grey: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* --- Helper Classes --- */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .main-header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--background-light);
+            text-decoration: none;
+            flex-basis: 100%;
+            margin-bottom: 10px;
+        }
+
+        .main-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--background-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 5px 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .nav-links .dropdown {
+            position: relative;
+        }
+        
+        .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .nav-links .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .cart-icon {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+
+
+        /* --- Hero Section --- */
+        .hero {
+            height: 500px;
+            background: url('https://placehold.co/1200x500/e0e5f0/a0a5b0?text=Acupuncture+Background') center center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0;
+        }
+
+        .hero-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 8px;
+            margin-left: 10%;
+            max-width: 450px;
+        }
+        
+        .hero-box .phone {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark-text);
+        }
+        
+        .hero-box .address {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin: 10px 0;
+        }
+        
+        .hero-box .tagline {
+            font-size: 1rem;
+            color: var(--light-text);
+        }
+        
+        /* --- Photo Gallery --- */
+        .gallery {
+            background-color: var(--background-light);
+        }
+        
+        .gallery-container {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .gallery-main-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .gallery-main-image img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid var(--border-color);
+            padding: 5px;
+        }
+        
+        .gallery-thumbnails {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .gallery-thumbnails img {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .gallery-thumbnails img:hover,
+        .gallery-thumbnails img.active {
+            border-color: var(--primary-green);
+        }
+
+        /* --- Welcome & Services Section --- */
+        .welcome, .services {
+            background-color: var(--background-grey);
+            text-align: center;
+        }
+        
+        .welcome p {
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+        }
+        
+        .welcome a {
+            color: var(--primary-green);
+            font-weight: 700;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .service-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        
+        .service-item h3 {
+            font-size: 1.2rem;
+            color: var(--dark-text);
+            text-transform: uppercase;
+        }
+        
+        .service-item .details {
+            display: none;
+        }
+        
+        .show-more {
+            color: var(--primary-green);
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        /* --- Contact Section --- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        
+        .map-placeholder {
+            width: 100%;
+            height: 350px;
+            background: url('https://placehold.co/600x400/e0e0e0/777?text=Map+Location') center center/cover;
+            border: 1px solid var(--border-color);
+        }
+
+        /* --- Connect & Appointments --- */
+        .connect {
+            background-color: var(--background-grey);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--background-light);
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons .facebook { color: #3b5998; }
+        .social-icons .instagram { color: #e1306c; }
+        .social-icons .yelp { color: #d32323; }
+        
+        .social-icons a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .appointments-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .appointment-card {
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        .appointment-card h3 {
+            font-size: 1.3rem;
+        }
+        
+        .appointment-card p {
+            color: var(--light-text);
+            margin-bottom: 20px;
+        }
+        
+        .btn-book {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: var(--background-light);
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-book:hover {
+            background-color: #559e3c;
+        }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .contact-grid, .appointments-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-box {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+            }
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+            .cart-icon {
+                display: none;
+            }
+            .hero {
+                height: auto;
+                padding: 40px 0;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .section-title::before, .section-title::after {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Acupuncture Stem Cell</a>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Services ⌄</a>
+                             <div class="dropdown-content">
+                                <a href="#">Service 1</a>
+                                <a href="#">Service 2</a>
+                                <a href="#">Service 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Conditions Treated</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Schedule Appointments</a></li>
+                        <li><a href="#">Consciousness Therapy</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-box">
+                <p class="phone">(310) 739-5866</p>
+                <p class="address">10940 Wilshire Blvd.<br>Suite 710 LA, CA 90024</p>
+                <p class="tagline">Energy Based Medicine - Quick recovery using natural methods</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Photo Gallery</h2>
+                <div class="gallery-container">
+                    <div class="gallery-main-image">
+                        <img src="https://placehold.co/800x500/f0f0f0/ccc?text=Treatment+Room" id="main-gallery-image" alt="Main gallery view">
+                    </div>
+                </div>
+                <div class="gallery-thumbnails" id="gallery-thumbs">
+                    <img src="https://placehold.co/100x75/e0e0e0/aaa?text=Thumb+1" alt="Thumbnail 1" class="active">
+                    <img src="https://placehold.co/100x75/d0d0d0/999?text=Thumb+2" alt="Thumbnail 2">
+                    <img src="https://placehold.co/100x75/c0c0c0/888?text=Thumb+3" alt="Thumbnail 3">
+                    <img src="https://placehold.co/100x75/b0b0b0/777?text=Thumb+4" alt="Thumbnail 4">
+                    <img src="https://placehold.co/100x75/a0a0a0/666?text=Thumb+5" alt="Thumbnail 5">
+                    <img src="https://placehold.co/800x500/f0f0f0/ccc?text=Treatment+Room" alt="Thumbnail 6">
+                    <img src="https://placehold.co/100x75/909090/555?text=Thumb+7" alt="Thumbnail 7">
+                </div>
+            </div>
+        </section>
+
+        <section class="welcome">
+            <div class="container">
+                <h2 class="section-title">Welcome</h2>
+                <p>There's much to see here. So, take your time, look around, and learn all there is to know about us. We hope you enjoy our site and take a moment to drop us a line at <a href="mailto:AcuStem@gmail.com">AcuStem@gmail.com</a>.</p>
+                
+                <div class="services-grid">
+                    <div class="service-item">
+                        <img src="https://placehold.co/150x150/e0e5f0/a0a5b0?text=Acupuncture" alt="Acupuncture">
+                        <h3>Activating Stem Cells WITH ACUPUNCTURE</h3>
+                        <p>Acupuncture has an effect to promote healing by stimulating the body's own stem cells into action...</p>
+                        <div class="details">
+                            <p>Acupuncture points are the body's natural source of pluripotent stem cells. Acupuncture is a system that activates pluripotent stem cells. These cells live in the channels that act as a fiberoptic communication system which delivers messages.</p>
+                        </div>
+                        <span class="show-more" onclick="toggleDetails(this)">+ Show More</span>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://placehold.co/150x150/e0e5f0/a0a5b0?text=Cupping" alt="Cupping Therapy">
+                        <h3>LYMPHATIC CUPPING THERAPY</h3>
+                        <p>Regular lymph cupping helps improve your immunity. The lymphatic system consists of lymphatic vessels...</p>
+                        <div class="details">
+                            <p>The lymph helps rid the body of waste and other unwanted materials from under the arm, groin, the tonsils, adenoids, spleen and the thymus are all part of the lymphatic system. The thymus is located in the chest.</p>
+                        </div>
+                        <span class="show-more" onclick="toggleDetails(this)">+ Show More</span>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://placehold.co/150x150/e0e5f0/a0a5b0?text=Healing" alt="Consciousness Therapy">
+                        <h3>PERSIAN MYSTICISM / CONSCIOUSNESS THERAPY / FARADARMANI</h3>
+                        <p>Faradarmani is a holistic healing modality based on the principles of consciousness, energy, and the interconnectedness...</p>
+                        <div class="details">
+                            <p>Faradarmani is considered a complementary or alternative therapy and aims to facilitate self-healing by accessing the individual's inherent abilities. The word "Faradarmani" translates to "The Art of Interuniversal Consciousness Healing".</p>
+                        </div>
+                        <span class="show-more" onclick="toggleDetails(this)">+ Show More</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 class="section-title" style="justify-content: flex-start;">Contact Us</h2>
+                        <p><strong>Email:</strong> <a href="mailto:AcuStem@gmail.com">AcuStem@gmail.com</a></p>
+                        <h3>ACUPUNCTURE STEM CELL</h3>
+                        <p>10940 Wilshire Blvd, Suite 710 Los Angeles, CA 90024</p>
+                        <p><strong>Phone:</strong> (310) 739-5866</p>
+                        <h3>Hours</h3>
+                        <p>Monday-Friday: 9am-7pm<br>Saturday: Closed<br>Sunday: 10am-2pm</p>
+                    </div>
+                    <div class="map-placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="connect">
+            <div class="container">
+                <h2 class="section-title">Connect With Us</h2>
+                <div class="social-icons">
+                     <a href="#" class="facebook" aria-label="Facebook">f</a>
+                     <a href="#" class="instagram" aria-label="Instagram">i</a>
+                     <a href="#" class="yelp" aria-label="Yelp">y</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="appointments">
+            <div class="container">
+                <h2 class="section-title">Online Appointments</h2>
+                <div class="appointments-grid">
+                    <div class="appointment-card">
+                        <h3>Acupuncture Initial Visit</h3>
+                        <p>1 hr | Price Varies</p>
+                        <a href="#" class="btn-book">BOOK</a>
+                    </div>
+                    <div class="appointment-card">
+                        <h3>Acupuncture Follow Up</h3>
+                        <p>1 hr | Price Varies</p>
+                        <a href="#" class="btn-book">BOOK</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Consciousness Therapy, Articles</p>
+        </div>
+    </footer>
+
+    <script>
+        // "Show More" functionality
+        function toggleDetails(element) {
+            const details = element.previousElementSibling;
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+                element.textContent = '+ Show More';
+            } else {
+                details.style.display = 'block';
+                element.textContent = '- Show Less';
+            }
+        }
+
+        // Photo Gallery functionality
+        const mainImage = document.getElementById('main-gallery-image');
+        const thumbnails = document.getElementById('gallery-thumbs').getElementsByTagName('img');
+
+        for (let thumb of thumbnails) {
+            thumb.addEventListener('click', function() {
+                // Set main image src to the clicked thumbnail's src
+                mainImage.src = this.src.replace('100x75', '800x500').replace('Thumb', 'Main');
+                
+                // Update active class
+                document.querySelector('.gallery-thumbnails img.active').classList.remove('active');
+                this.classList.add('active');
+            });
+        }
+    </script>
+
+</body>
+</html>
