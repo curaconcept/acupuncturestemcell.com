@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cupping Therapy Los Angeles | Dr. Yasmin Harounian L.Ac</title>
+    <title>CBD Detox Cupping Therapy Los Angeles | Lymphatic System Enhancement | Dr. Yasmin Harounian L.Ac</title>
     <meta name="description" content="CBD detox cupping therapy in Los Angeles by Dr. Yasmin Harounian L.Ac. Lymphatic system detoxification, immune system enhancement, and pain relief through traditional cupping with CBD oil absorption.">
     <meta name="keywords" content="cupping therapy los angeles, Dr. Yasmin Harounian, CBD detox cupping, lymphatic detox, immune system enhancement, pain relief cupping, detox therapy">
     <meta name="author" content="Dr. Yasmin Harounian L.Ac">
@@ -460,11 +460,11 @@
                         <li><a href="Aboutus.html">About Us</a></li>
                         <li><a href="Conditionstreated.html">Conditions Treated</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="schedule-appointments.html">Schedule Appointments</a></li>
                         <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
-                <div class="cart-icon" aria-label="Shopping cart">🛒</div>
+
             </div>
         </div>
     </header>
@@ -472,14 +472,14 @@
     <main role="main">
         <section class="cupping-section" aria-labelledby="cupping-section-title">
             <div class="container">
-                <h2 id="cupping-section-title" class="section-title">CBD Detox Cupping Therapy</h2>
+                <h1 id="cupping-section-title" class="section-title">CBD Detox Cupping Therapy</h1>
                 <div class="cupping-content-grid">
                     <div class="cupping-text">
                         <h3>Lymphatic System Enhancement</h3>
                         <p>Regular lymph cupping helps improve your immunity. The lymphatic system consists of lymphatic vessels that are connected to lymph nodes. The lymph helps rid the body of waste and other unwanted materials from under the arm, groin, the tonsils, adenoids, spleen and the thymus are all part of the lymphatic system. The thymus is located in the chest just above the heart. Increasing Lymphatic output increases the immune systems ability to detoxify the body. Lymph stagnation causes headaches that start as pressure. Dr. Harounian believes that a majority of diseases are due to lymphatic stagnation including arthritis and other various diseases that doctors have not linked to the lymphatic system yet.</p>
                         
                         <h3>Traditional Cupping with CBD Enhancement</h3>
-                        <p>Cupping is a treatment technique that involves the application of glass cups with heat to create suction, thereby pulling toxins out of the body and stimulating local blood circulations. By recruiting red and white blood cells and stimulating blood flow to an area, allowing metabolism of nitrogenous wastes and reducing and eliminating pain and inflammation. It is effective for body aches, muscle pain, and relieving colds. Dr. Harounian incorporates the service of using CBD oil directly after cupping and detoxing the skin knowing that the skin absorbs the CBD oil with in 20 seconds. Resulting in a higher rate of absorption directly in the body.</p>
+                        <p>Cupping is a treatment technique that involves the application of glass cups with heat to create suction, thereby pulling toxins out of the body and stimulating local blood circulations. By recruiting red and white blood cells and stimulating blood flow to an area, allowing metabolism of nitrogenous wastes and reducing and eliminating pain and inflammation. It is effective for body aches, muscle pain, and relieving colds. Dr. Harounian incorporates the service of using CBD oil directly after cupping and detoxing the skin knowing that the skin absorbs the CBD oil with in 20 seconds. Resulting in a higher rate of absorption directly in the body. This treatment pairs excellently with <a href="acupunctureservice.html">traditional acupuncture</a> and <a href="electro.html">electroacupuncture</a> for comprehensive healing.</p>
                     </div>
                     <div class="cupping-image">
                         <img src="images/Screenshot 2025-08-04 at 18.56.29.png" alt="Dr. Yasmin Harounian L.Ac performing CBD detox cupping therapy treatment in her Los Angeles clinic" title="CBD Detox Cupping Therapy by Dr. Yasmin Harounian" loading="lazy">
@@ -524,16 +524,29 @@
             <div class="container">
                 <h2 id="cta-title">Experience CBD Detox Cupping Therapy</h2>
                 <p>Discover the powerful benefits of CBD-enhanced cupping therapy with Dr. Yasmin Harounian L.Ac in Los Angeles. Experience lymphatic detoxification, immune system enhancement, and enhanced CBD absorption for optimal wellness.</p>
-                <a href="index.html#appointments" class="cta-button" aria-label="Schedule cupping therapy appointment with Dr. Yasmin Harounian">Schedule Your Session</a>
+                <a href="schedule-appointments.html" class="cta-button" aria-label="Schedule cupping therapy appointment with Dr. Yasmin Harounian">Schedule Your Session</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="container">
-            <p>Consciousness Therapy, Articles</p>
-        </div>
-    </footer>
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
