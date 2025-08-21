@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laser Acupuncture Los Angeles | Dr. Yasmin Harounian L.Ac</title>
+    <title>Laser Acupuncture Los Angeles | Needle-less Treatment, Pain Relief | Dr. Yasmin Harounian L.Ac</title>
     <meta name="description" content="Needle-less laser acupuncture treatment in Los Angeles by Dr. Yasmin Harounian L.Ac. Advanced laser therapy for pain relief, inflammation reduction, and cell regeneration. Safe and painless alternative to traditional acupuncture.">
     <meta name="keywords" content="laser acupuncture los angeles, Dr. Yasmin Harounian, needle-less acupuncture, laser therapy, pain relief laser, inflammation reduction, cell regeneration, red light therapy">
     <meta name="author" content="Dr. Yasmin Harounian L.Ac">
@@ -484,11 +484,11 @@
                         <li><a href="Aboutus.html">About Us</a></li>
                         <li><a href="Conditionstreated.html">Conditions Treated</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="schedule-appointments.html">Schedule Appointments</a></li>
                         <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
-                <div class="cart-icon" aria-label="Shopping cart">🛒</div>
+
             </div>
         </div>
     </header>
@@ -496,7 +496,7 @@
     <main role="main">
         <section class="laser-acupuncture-section" aria-labelledby="laser-acupuncture-title">
             <div class="container">
-                <h2 id="laser-acupuncture-title" class="section-title">Laser Acupuncture Treatment</h2>
+                <h1 id="laser-acupuncture-title" class="section-title">Laser Acupuncture Treatment</h1>
                 <div class="laser-content-grid">
                     <div class="laser-image">
                         <img src="images/Screenshot 2025-08-04 at 19.00.35.png" alt="Dr. Yasmin Harounian L.Ac performing needle-less laser acupuncture treatment in her Los Angeles clinic" title="Laser Acupuncture Treatment by Dr. Yasmin Harounian" loading="lazy">
@@ -556,16 +556,29 @@
             <div class="container">
                 <h2 id="cta-title">Experience Needle-less Laser Acupuncture</h2>
                 <p>Discover the advanced benefits of laser acupuncture with Dr. Yasmin Harounian L.Ac in Los Angeles. Experience painless, safe treatment that promotes cell regeneration, reduces inflammation, and provides effective pain relief.</p>
-                <a href="index.html#appointments" class="cta-button" aria-label="Schedule laser acupuncture appointment with Dr. Yasmin Harounian">Schedule Your Treatment</a>
+                <a href="schedule-appointments.html" class="cta-button" aria-label="Schedule laser acupuncture appointment with Dr. Yasmin Harounian">Schedule Your Treatment</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="container">
-            <p>Consciousness Therapy, Articles</p>
-        </div>
-    </footer>
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
