@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consciousness Therapy & Faradarmani | Dr. Yasmin Harounian L.Ac Los Angeles</title>
+    <title>Consciousness Therapy & Faradarmani Los Angeles | Holistic Healing | Dr. Yasmin Harounian L.Ac</title>
     <meta name="description" content="Experience Faradarmani consciousness therapy with Dr. Yasmin Harounian L.Ac in Los Angeles. Holistic healing modality based on consciousness, energy, and mind-body interconnectedness. Non-contact therapy for self-healing.">
     <meta name="keywords" content="consciousness therapy, Faradarmani, Dr. Yasmin Harounian, holistic healing, energy therapy, mind body healing, Los Angeles consciousness therapy, Persian mysticism">
     <meta name="author" content="Dr. Yasmin Harounian L.Ac">
@@ -528,7 +528,7 @@
             <div class="header-content">
                 <a href="index.html" class="logo" aria-label="Acupuncture Stem Cell Therapy - Home">Acupuncture Stem Cell</a>
                 <nav class="main-nav" role="navigation" aria-label="Main navigation">
-                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -549,7 +549,7 @@
                         <li><a href="Aboutus.html">About Us</a></li>
                         <li><a href="Conditionstreated.html">Conditions Treated</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="schedule-appointments.html">Schedule Appointments</a></li>
                         <li><a href="concioustherpy.html" aria-current="page">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
@@ -623,25 +623,22 @@
             <div class="container">
                 <h2 id="cta-title">Ready to Experience Consciousness Therapy?</h2>
                 <p>Discover the transformative power of Faradarmani consciousness therapy with Dr. Yasmin Harounian L.Ac in Los Angeles. Experience holistic healing through consciousness and energy therapy.</p>
-                <a href="index.html#appointments" class="cta-button" aria-label="Schedule consciousness therapy appointment with Dr. Yasmin Harounian">Schedule Your Session</a>
+                <a href="schedule-appointments.html" class="cta-button" aria-label="Schedule consciousness therapy appointment with Dr. Yasmin Harounian">Schedule Your Session</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="container">
-            <p>Consciousness Therapy, Articles</p>
-        </div>
-    </footer>
+
 
     <script>
+        // Mobile menu functionality
         const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
+        const navLinks = document.getElementById('nav-links');
 
-        hamburger.addEventListener('click', () => {
+        function toggleMenu() {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('active');
-        });
+        }
 
         // Close menu when a link is clicked (on mobile)
         document.querySelectorAll('.nav-links a').forEach(link => {
