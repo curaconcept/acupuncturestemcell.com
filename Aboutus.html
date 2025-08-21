@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Dr. Yasmin Harounian L.Ac | Acupuncture & Stem Cell Therapy Los Angeles</title>
-    <meta name="description" content="Meet Dr. Yasmin Harounian L.Ac, licensed acupuncturist in Los Angeles since 2001. Expert in acupuncture, stem cell therapy, and holistic healing. Serving Westwood and greater LA area with house calls available.">
+    <title>About Dr. Yasmin Harounian L.Ac | Licensed Acupuncturist Los Angeles | Acupuncture & Stem Cell Therapy</title>
+    <meta name="description" content="Meet Dr. Yasmin Harounian L.Ac, licensed acupuncturist in Los Angeles since 2001. Expert in acupuncture, stem cell therapy, cupping therapy, and consciousness therapy. Serving Westwood, Beverly Hills, Santa Monica, and greater LA area.">
     <meta name="keywords" content="Dr. Yasmin Harounian, L.Ac, acupuncture los angeles, stem cell therapy, licensed acupuncturist, westwood acupuncture, holistic healing, eastern medicine">
     <meta name="author" content="Dr. Yasmin Harounian L.Ac">
     <meta name="robots" content="index, follow">
@@ -27,10 +27,11 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
-        "name": "Acupuncture Stem Cell Therapy",
-        "description": "Expert acupuncture and stem cell therapy services in Los Angeles. Licensed practitioner Dr. Yasmin Harounian L.Ac provides acupuncture, cupping therapy, and consciousness therapy with house call availability.",
-        "url": "https://acustem.com",
+        "@type": "Person",
+        "name": "Dr. Yasmin Harounian",
+        "jobTitle": "Licensed Acupuncturist",
+        "description": "Doctor of Eastern Medicine since 2001, specializing in acupuncture and stem cell activation therapy",
+        "url": "https://acustem.com/Aboutus.html",
         "telephone": "+1-310-739-5866",
         "email": "AcuStem@gmail.com",
         "address": {
@@ -41,62 +42,40 @@
             "postalCode": "90024",
             "addressCountry": "US"
         },
-        "founder": {
-            "@type": "Person",
-            "name": "Dr. Yasmin Harounian",
-            "jobTitle": "Licensed Acupuncturist",
-            "description": "Doctor of Eastern Medicine since 2001, specializing in acupuncture and stem cell activation therapy",
-            "alumniOf": {
-                "@type": "EducationalOrganization",
-                "name": "Eastern Medicine Program"
-            },
-            "knowsAbout": ["Acupuncture", "Stem Cell Therapy", "Eastern Medicine", "Holistic Healing", "Cupping Therapy", "Consciousness Therapy"],
-            "hasCredential": "L.Ac",
-            "worksFor": {
-                "@type": "MedicalBusiness",
-                "name": "Acupuncture Stem Cell Therapy"
-            }
+        "worksFor": {
+            "@type": "MedicalBusiness",
+            "name": "Acupuncture Stem Cell Therapy",
+            "url": "https://acustem.com"
         },
-        "employee": [
-            {
-                "@type": "Person",
-                "name": "Dr. Yasmin Harounian",
-                "jobTitle": "Licensed Acupuncturist",
-                "description": "Doctor of Eastern Medicine since 2001"
-            },
-            {
-                "@type": "Person",
-                "name": "Heathir Brown",
-                "jobTitle": "Craniosacral Therapist",
-                "description": "CD, CPDT, Craniosacral Therapist, Reiki Master with over a decade of experience"
-            }
+        "knowsAbout": [
+            "Acupuncture",
+            "Stem Cell Therapy", 
+            "Cupping Therapy",
+            "Consciousness Therapy",
+            "Electroacupuncture",
+            "Laser Acupuncture",
+            "Eastern Medicine",
+            "Holistic Healing"
         ],
-        "openingHours": [
-            "Mo-Fr 09:00-19:00",
-            "Su 10:00-14:00"
-        ],
-        "priceRange": "$$",
-        "paymentAccepted": "Cash, Credit Card, Insurance",
-        "currenciesAccepted": "USD",
-        "areaServed": {
-            "@type": "City",
-            "name": "Los Angeles"
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Eastern Medicine Program"
         },
-        "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": "34.0522",
-                "longitude": "-118.2437"
-            },
-            "geoRadius": "50000"
-        }
+        "hasCredential": "L.Ac (Licensed Acupuncturist)",
+        "award": "Graduated with honors in Eastern Medicine",
+        "image": "https://acustem.com/images/dr-yasmin-harounian.jpg",
+        "sameAs": [
+            "https://www.google.com/maps/place/Acupuncture+Stem+Cell"
+        ]
     }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="images/dr-yasmin-harounian.jpg" as="image">
     <style>
         /* --- Global Styles & Variables --- */
         :root {
@@ -496,7 +475,7 @@
             <div class="header-content">
                 <a href="index.html" class="logo" aria-label="Acupuncture Stem Cell Therapy - Home">Acupuncture Stem Cell</a>
                 <nav class="main-nav" role="navigation" aria-label="Main navigation">
-                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -517,7 +496,7 @@
                         <li><a href="Aboutus.html" aria-current="page">About Us</a></li>
                         <li><a href="Conditionstreated.html">Conditions Treated</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="schedule-appointments.html">Schedule Appointments</a></li>
                         <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
@@ -528,7 +507,7 @@
     <main role="main">
         <section class="promise-section" aria-labelledby="promise-title">
             <div class="container">
-                <h2 id="promise-title" class="section-title">About Us</h2>
+                <h1 id="promise-title" class="section-title">About Dr. Yasmin Harounian L.Ac - Licensed Acupuncturist Los Angeles</h1>
                 <div class="promise-grid">
                     <div class="promise-item">
                         <img src="images/Screenshot 2025-08-04 at 19.00.58.png" alt="Dr. Yasmin Harounian L.Ac providing caring and compassionate acupuncture treatment in her Los Angeles clinic" title="Caring Acupuncture Treatment by Dr. Yasmin Harounian" loading="lazy">
@@ -551,14 +530,14 @@
 
         <section class="bio-section" aria-labelledby="dr-harounian-title">
             <div class="container">
-                <h2 id="dr-harounian-title" class="section-title">About Dr. Yasmin Harounian</h2>
+                <h2 id="dr-harounian-title" class="section-title">About Dr. Yasmin Harounian L.Ac</h2>
                 <div class="bio-grid reverse">
                     <div class="bio-image">
-                        <img src="https://placehold.co/250x250/e0e5f0/a0a5b0?text=Dr.+Yasmin" alt="Dr. Yasmin Harounian L.Ac, licensed acupuncturist and expert in stem cell therapy in Los Angeles" title="Dr. Yasmin Harounian L.Ac - Licensed Acupuncturist Los Angeles">
+                        <img src="images/dr-yasmin-harounian.jpg" alt="Dr. Yasmin Harounian L.Ac, licensed acupuncturist and expert in stem cell therapy in Los Angeles" title="Dr. Yasmin Harounian L.Ac - Licensed Acupuncturist Los Angeles">
                     </div>
                     <div class="bio-text">
                         <h2>Dr. Yasmin Harounian LAc.</h2>
-                        <p>Dr. Yasmin Harounian is a doctor of eastern medicine since 2001. She graduated with honors in eastern medicine, and was asked to teach before she graduated due to her results in the clinic as an intern. She was the founder of Co-Creative Synergy, an integrative holistic practice, and taught both in the U.S. and Israel...</p>
+                        <p>Dr. Yasmin Harounian L.Ac is a doctor of eastern medicine since 2001. She graduated with honors in eastern medicine, and was asked to teach before she graduated due to her results in the clinic as an intern. She was the founder of Co-Creative Synergy, an integrative holistic practice, and taught both in the U.S. and Israel...</p>
                         <p>Combining her education and experience with a strong sense of intuition, she provides services that are empowering, enlightening, transformative, and healing. Seeing the vast changes in medicine has inspired her to honor her gifts of balancing health and wholeness for clients through activating stem cells for faster regeneration and rejuvenation...</p>
                         <p>Acupuncture offers a holistic approach to illness which links the body/mind/emotions, and effectively treats many common ailments. The World Health Organization recommends acupuncture as an effective treatment for over 150 medical ailments...</p>
                         <ul>
@@ -596,38 +575,30 @@
             </div>
         </section>
         
-        <section class="cst-section" aria-labelledby="cst-title">
-            <div class="container">
-                <h3 id="cst-title">What is CranioSacral Therapy (CST)?</h3>
-                <p>CranioSacral Therapy (CST) is a gentle approach that releases tensions deep in the body. It promotes well-being by eliminating pain and boosting health and immunity. It was pioneered and developed by Osteopathic Physician John E. Upledger after years of clinical testing and research at Michigan State University.</p>
-            </div>
-        </section>
+
 
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="container">
-            <p>Consciousness Therapy, Articles</p>
-        </div>
-    </footer>
 
-         <script>
-         const hamburger = document.querySelector('.hamburger');
-         const navLinks = document.querySelector('.nav-links');
 
-         hamburger.addEventListener('click', () => {
-             hamburger.classList.toggle('active');
-             navLinks.classList.toggle('active');
-         });
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('nav-links');
 
-         // Close menu when a link is clicked (on mobile)
-         document.querySelectorAll('.nav-links a').forEach(link => {
-             link.addEventListener('click', () => {
-                 hamburger.classList.remove('active');
-                 navLinks.classList.remove('active');
-             });
-         });
-     </script>
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
