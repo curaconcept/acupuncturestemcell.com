@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electroacupuncture Los Angeles | Dr. Yasmin Harounian L.Ac</title>
-    <meta name="description" content="Advanced electroacupuncture treatment in Los Angeles by Dr. Yasmin Harounian L.Ac. Stimulates stem cell release, enhances healing, and provides lasting pain relief. Evidence-based treatment for chronic conditions.">
+    <title>Electroacupuncture Los Angeles | Stem Cell Activation, Pain Relief | Dr. Yasmin Harounian L.Ac</title>
+    <meta name="description" content="Advanced electroacupuncture treatment in Los Angeles by Dr. Yasmin Harounian L.Ac. Stimulates stem cell release, enhances healing, and provides lasting pain relief. Evidence-based treatment for chronic conditions and injuries.">
     <meta name="keywords" content="electroacupuncture los angeles, Dr. Yasmin Harounian, electroacupuncture treatment, stem cell activation, pain relief acupuncture, chronic pain treatment, healing acupuncture">
     <meta name="author" content="Dr. Yasmin Harounian L.Ac">
     <meta name="robots" content="index, follow">
@@ -515,11 +515,11 @@
                         <li><a href="Aboutus.html">About Us</a></li>
                         <li><a href="Conditionstreated.html">Conditions Treated</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="schedule-appointments.html">Schedule Appointments</a></li>
                         <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
-                <div class="cart-icon" aria-label="Shopping cart">🛒</div>
+
             </div>
         </div>
     </header>
@@ -539,7 +539,7 @@
                     <h3>Research-Based Treatment</h3>
                     <p>Researchers from Indiana University School of Medicine produced a publication online March 16th, 2017 in the journal <a href="#" target="_blank" rel="noopener">Stem Cells</a> that provides the most comprehensive picture yet of how electroacupuncture stimulates the brain, allowing for the release of stem cells, and adds new insight to the cells' healing properties.</p>
                     
-                    <p>This study demonstrates how electroacupuncture results in the release of reparative mesenchymal stem cells into the blood stream.</p>
+                    <p>This study demonstrates how electroacupuncture results in the release of reparative mesenchymal stem cells into the blood stream. Combined with our other treatments like <a href="cupping.html">cupping therapy</a> and <a href="concioustherpy.html">consciousness therapy</a>, we provide comprehensive holistic healing.</p>
                     
                     <p>They found that stem cells were mobilized and released into the brain within 2 hours of treatment.</p>
                     
@@ -600,16 +600,29 @@
             <div class="container">
                 <h2 id="cta-title">Experience Advanced Electroacupuncture Treatment</h2>
                 <p>Discover the cutting-edge benefits of electroacupuncture with Dr. Yasmin Harounian L.Ac in Los Angeles. Experience stem cell activation, enhanced healing, and lasting pain relief through evidence-based treatment.</p>
-                <a href="index.html#appointments" class="cta-button" aria-label="Schedule electroacupuncture appointment with Dr. Yasmin Harounian">Schedule Your Treatment</a>
+                <a href="schedule-appointments.html" class="cta-button" aria-label="Schedule electroacupuncture appointment with Dr. Yasmin Harounian">Schedule Your Treatment</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="container">
-            <p>Consciousness Therapy, Articles</p>
-        </div>
-    </footer>
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
