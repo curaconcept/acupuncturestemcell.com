@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Testimonials | Dr. Yasmin Harounian L.Ac Acupuncture Los Angeles</title>
-    <meta name="description" content="Read authentic patient testimonials about Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles. Real stories of healing from pain, chronic conditions, and improved wellness.">
+    <title>Acupuncture Patient Testimonials | Dr. Yasmin Harounian L.Ac | Los Angeles Reviews</title>
+    <meta name="description" content="Read authentic patient testimonials about Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles. Real stories of healing from pain, chronic conditions, and improved wellness. 5-star reviews.">
     <meta name="keywords" content="acupuncture testimonials, Dr. Yasmin Harounian reviews, acupuncture los angeles reviews, patient testimonials acupuncture, healing testimonials">
     <meta name="author" content="Dr. Yasmin Harounian L.Ac">
     <meta name="robots" content="index, follow">
@@ -29,8 +29,8 @@
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
         "name": "Acupuncture Stem Cell Therapy",
-        "description": "Expert acupuncture and stem cell therapy services in Los Angeles. Licensed practitioner Dr. Yasmin Harounian L.Ac provides acupuncture, cupping therapy, and consciousness therapy with house call availability.",
-        "url": "https://acustem.com",
+        "description": "Patient testimonials for Dr. Yasmin Harounian L.Ac acupuncture treatments in Los Angeles. Read authentic reviews from patients who have experienced healing and improved wellness.",
+        "url": "https://acustem.com/testimonials.html",
         "telephone": "+1-310-739-5866",
         "email": "AcuStem@gmail.com",
         "address": {
@@ -485,7 +485,7 @@
             <div class="header-content">
                 <a href="index.html" class="logo" aria-label="Acupuncture Stem Cell Therapy - Home">Acupuncture Stem Cell</a>
                 <nav class="main-nav" role="navigation" aria-label="Main navigation">
-                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -506,7 +506,7 @@
                         <li><a href="Aboutus.html">About Us</a></li>
                         <li><a href="Conditionstreated.html">Conditions Treated</a></li>
                         <li><a href="testimonials.html" aria-current="page">Testimonials</a></li>
-                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="schedule-appointments.html">Schedule Appointments</a></li>
                         <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
@@ -517,10 +517,10 @@
     <main role="main">
         <section class="testimonials-section" aria-labelledby="testimonials-title">
             <div class="container">
-                <h2 id="testimonials-title" class="section-title">Patient Testimonials</h2>
+                <h1 id="testimonials-title" class="section-title">Patient Testimonials</h1>
                 
                 <div class="testimonials-intro">
-                    <p>Read authentic testimonials from patients who have experienced the healing power of Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles. These real stories showcase the transformative effects of acupuncture on pain management, chronic conditions, and overall wellness.</p>
+                    <p>Read authentic testimonials from patients who have experienced the healing power of Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles. These real stories showcase the transformative effects of acupuncture on pain management, chronic conditions, and overall wellness. Ready to start your healing journey? <a href="schedule-appointments.html">Schedule your appointment today</a>.</p>
                 </div>
 
                 <div class="testimonials-grid">
@@ -669,36 +669,31 @@
             <div class="container">
                 <h2 id="cta-title">Ready to Experience the Healing?</h2>
                 <p>Join hundreds of satisfied patients who have experienced the transformative power of Dr. Yasmin Harounian L.Ac's acupuncture treatments in Los Angeles.</p>
-                <a href="index.html#appointments" class="cta-button" aria-label="Schedule acupuncture appointment with Dr. Yasmin Harounian">Schedule Your Appointment</a>
+                <a href="schedule-appointments.html" class="cta-button" aria-label="Schedule acupuncture appointment with Dr. Yasmin Harounian">Schedule Your Appointment</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="container">
-            <p>Consciousness Therapy, Articles</p>
-        </div>
-    </footer>
 
-         <script>
-         document.addEventListener('DOMContentLoaded', function() {
-             const hamburger = document.querySelector('.hamburger');
-             const navLinks = document.querySelector('.nav-links');
 
-             hamburger.addEventListener('click', function() {
-                 hamburger.classList.toggle('active');
-                 navLinks.classList.toggle('active');
-             });
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('nav-links');
 
-             // Close menu when a link is clicked (on mobile)
-             document.querySelectorAll('.nav-links a').forEach(link => {
-                 link.addEventListener('click', () => {
-                     hamburger.classList.remove('active');
-                     navLinks.classList.remove('active');
-                 });
-             });
-         });
-     </script>
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
