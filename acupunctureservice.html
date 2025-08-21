@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acupuncture Services Los Angeles | Dr. Yasmin Harounian L.Ac</title>
-    <meta name="description" content="Expert acupuncture services in Los Angeles by Dr. Yasmin Harounian L.Ac. Treating pain, sports injuries, chronic conditions, and promoting wellness. Serving Malibu, Santa Monica, Beverly Hills, and greater LA area.">
+    <title>Acupuncture Services Los Angeles | Pain Relief, Sports Injuries | Dr. Yasmin Harounian L.Ac</title>
+    <meta name="description" content="Expert acupuncture services in Los Angeles by Dr. Yasmin Harounian L.Ac. Treating pain, sports injuries, chronic conditions, and promoting wellness. Serving Westwood, Beverly Hills, Santa Monica, Malibu area.">
     <meta name="keywords" content="acupuncture los angeles, Dr. Yasmin Harounian, acupuncture services, pain management acupuncture, sports injury acupuncture, chronic pain acupuncture, malibu acupuncture, santa monica acupuncture">
     <meta name="author" content="Dr. Yasmin Harounian L.Ac">
     <meta name="robots" content="index, follow">
@@ -154,6 +154,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="images/Screenshot 2025-08-04 at 18.56.56.png" as="image">
     <style>
         /* --- Global Styles & Variables --- */
         :root {
@@ -510,11 +513,11 @@
                         <li><a href="Aboutus.html">About Us</a></li>
                         <li><a href="Conditionstreated.html">Conditions Treated</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="schedule-appointments.html">Schedule Appointments</a></li>
                         <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
-                <div class="cart-icon" aria-label="Shopping cart">🛒</div>
+
             </div>
         </div>
     </header>
@@ -522,10 +525,10 @@
     <main role="main">
         <section class="acupuncture-intro" aria-labelledby="acupuncture-intro-title">
             <div class="container">
-                <h2 id="acupuncture-intro-title" class="section-title">Acupuncture Services in Los Angeles</h2>
+                <h1 id="acupuncture-intro-title" class="section-title">Acupuncture Services in Los Angeles</h1>
                 <div class="acupuncture-intro-grid">
                     <div class="acupuncture-intro-text">
-                        <p>According to Eastern medical theory, every human body is a dynamic, self-contained system that is in constant interaction with the universe. The practice of acupuncture helps to enhance the movement of our energy, thereby bringing balance to the body and creating an optimal physical state that leads to an increased sense of well-being. Acupuncture promotes health, prevents disease, and even enhances beauty and delays aging.</p>
+                        <p>According to Eastern medical theory, every human body is a dynamic, self-contained system that is in constant interaction with the universe. The practice of acupuncture helps to enhance the movement of our energy, thereby bringing balance to the body and creating an optimal physical state that leads to an increased sense of well-being. Acupuncture promotes health, prevents disease, and even enhances beauty and delays aging. We also offer specialized treatments including <a href="cupping.html">cupping therapy</a> and <a href="concioustherpy.html">consciousness therapy</a>.</p>
                         <p>Acupuncture is a complete medical system that has been used for thousands of years on a large segment of the world's population making acupuncture the most widely practiced and thoroughly tested medicine in history with recorded clinical results. Dr. Harounian uses acupuncture to treat the underlying cause of a symptom and improve the quality of life. Acupuncture is a process which involves the insertion of pre-sterilized, nontoxic, and disposable fine needles into points that are strategic conductors of electromagnetic signals. The World Health Organization estimates that more people worldwide use acupuncture more often than any other form of health care. One of the advantages of acupuncture is that the incidence of adverse side effects are substantially lower than that of many drugs or other accepted medical procedures used for the same condition and the benefits of acupuncture are very high. Dr. Harounian believes there is a new, more aware consciousness today, which is not based on the use of drugs that are made to suppress the signs and symptoms of a disease, which only pushes the disease farther into the body. The highest level of healing is to address health issues by taking responsibility for one's health and consciousness. She believes you can not poison your body with drugs into health.</p>
                     </div>
                     <div class="acupuncture-intro-image">
@@ -691,16 +694,29 @@
             <div class="container">
                 <h2 id="cta-title">Ready to Experience Acupuncture Healing?</h2>
                 <p>Discover the transformative power of acupuncture with Dr. Yasmin Harounian L.Ac in Los Angeles. Experience natural pain relief, improved wellness, and enhanced quality of life.</p>
-                <a href="index.html#appointments" class="cta-button" aria-label="Schedule acupuncture appointment with Dr. Yasmin Harounian">Schedule Your Appointment</a>
+                <a href="schedule-appointments.html" class="cta-button" aria-label="Schedule acupuncture appointment with Dr. Yasmin Harounian">Schedule Your Appointment</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="container">
-            <p>Consciousness Therapy, Articles</p>
-        </div>
-    </footer>
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
