@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditions Treated by Acupuncture | Dr. Yasmin Harounian L.Ac Los Angeles</title>
-    <meta name="description" content="Comprehensive list of conditions treated with acupuncture by Dr. Yasmin Harounian L.Ac in Los Angeles. From pain management to digestive disorders, immune issues to emotional health - evidence-based acupuncture treatments.">
+    <title>Conditions Treated by Acupuncture | Pain Management, Digestive Disorders | Dr. Yasmin Harounian L.Ac Los Angeles</title>
+    <meta name="description" content="Comprehensive list of conditions treated with acupuncture by Dr. Yasmin Harounian L.Ac in Los Angeles. Pain management, digestive disorders, immune issues, emotional health, and more - evidence-based treatments.">
     <meta name="keywords" content="acupuncture conditions treated, acupuncture los angeles, Dr. Yasmin Harounian, pain management acupuncture, digestive disorders acupuncture, immune disorders acupuncture, emotional health acupuncture">
     <meta name="author" content="Dr. Yasmin Harounian L.Ac">
     <meta name="robots" content="index, follow">
@@ -543,7 +543,7 @@
             <div class="header-content">
                 <a href="index.html" class="logo" aria-label="Acupuncture Stem Cell Therapy - Home">Acupuncture Stem Cell</a>
                 <nav class="main-nav" role="navigation" aria-label="Main navigation">
-                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -564,7 +564,7 @@
                         <li><a href="Aboutus.html">About Us</a></li>
                         <li><a href="Conditionstreated.html" aria-current="page">Conditions Treated</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="schedule-appointments.html">Schedule Appointments</a></li>
                         <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
@@ -585,6 +585,7 @@
                 <h2 id="conditions-title" class="section-title">According to the National Institute of Health</h2>
                 <div class="conditions-list-container">
                     <h3>Acupuncture Can Treat The Following:</h3>
+                    <p>Dr. Yasmin Harounian L.Ac offers various treatment modalities including <a href="acupunctureservice.html">traditional acupuncture</a>, <a href="electro.html">electroacupuncture</a>, <a href="cupping.html">cupping therapy</a>, and <a href="concioustherpy.html">consciousness therapy</a> to address these conditions.</p>
                     
                     <h3>Eye, Ear, Nose, Throat Disorders</h3>
                     <ul>
@@ -702,24 +703,29 @@
             <div class="container">
                 <h2 id="cta-title">Ready to Start Your Healing Journey?</h2>
                 <p>Dr. Yasmin Harounian L.Ac has been helping patients in Los Angeles since 2001 with evidence-based acupuncture treatments for a wide range of conditions.</p>
-                <a href="index.html#appointments" class="cta-button" aria-label="Schedule acupuncture appointment with Dr. Yasmin Harounian">Schedule Your Appointment</a>
+                <a href="schedule-appointments.html" class="cta-button" aria-label="Schedule acupuncture appointment with Dr. Yasmin Harounian">Schedule Your Appointment</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="container">
-            <p>Consciousness Therapy, Articles</p>
-        </div>
-    </footer>
+
 
     <script>
+        // Mobile menu functionality
         const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
+        const navLinks = document.getElementById('nav-links');
 
-        hamburger.addEventListener('click', () => {
+        function toggleMenu() {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
         });
     </script>
 
