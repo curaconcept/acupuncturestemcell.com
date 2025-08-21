@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shamanic Healing Los Angeles | Dr. Yasmin Harounian L.Ac</title>
+    <title>Shamanic Healing Los Angeles | Faradarmani Therapy | Dr. Yasmin Harounian L.Ac</title>
     <meta name="description" content="Shamanic healing and Faradarmani therapy in Los Angeles by Dr. Yasmin Harounian L.Ac. Holistic consciousness-based healing that facilitates self-healing through energy and mind-body connection.">
     <meta name="keywords" content="shamanic healing los angeles, Dr. Yasmin Harounian, Faradarmani therapy, consciousness healing, energy therapy, holistic healing, alternative therapy">
     <meta name="author" content="Dr. Yasmin Harounian L.Ac">
@@ -510,11 +510,11 @@
                         <li><a href="Aboutus.html">About Us</a></li>
                         <li><a href="Conditionstreated.html">Conditions Treated</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="index.html#appointments">Schedule Appointments</a></li>
+                        <li><a href="schedule-appointments.html">Schedule Appointments</a></li>
                         <li><a href="concioustherpy.html">Consciousness Therapy</a></li>
                     </ul>
                 </nav>
-                <div class="cart-icon" aria-label="Shopping cart">🛒</div>
+
             </div>
         </div>
     </header>
@@ -583,16 +583,29 @@
             <div class="container">
                 <h2 id="cta-title">Experience Shamanic Healing & Faradarmani Therapy</h2>
                 <p>Discover the transformative power of consciousness-based healing with Dr. Yasmin Harounian L.Ac in Los Angeles. Experience deep relaxation, energy enhancement, and holistic wellness through Faradarmani therapy.</p>
-                <a href="index.html#appointments" class="cta-button" aria-label="Schedule shamanic healing appointment with Dr. Yasmin Harounian">Schedule Your Session</a>
+                <a href="schedule-appointments.html" class="cta-button" aria-label="Schedule shamanic healing appointment with Dr. Yasmin Harounian">Schedule Your Session</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <div class="container">
-            <p>Consciousness Therapy, Articles</p>
-        </div>
-    </footer>
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
