@@ -292,46 +292,25 @@
         }
 
         /* --- Electroacupuncture Page Specific Styles --- */
-        .electro-hero {
+        .electro-content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-bottom: 40px;
+        }
+        
+        .electro-image img {
             width: 100%;
-            height: 500px;
-            background: url('images/Screenshot 2025-08-04 at 19.01.34.png') center center/cover no-repeat;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            height: auto;
+            border-radius: 8px;
         }
-
-        .electro-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
-        }
-
-        .electro-hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            color: white;
-            max-width: 800px;
-            padding: 0 20px;
-        }
-
-        .electro-hero-content h1 {
-            font-size: 3rem;
+        
+        .electro-text h3 {
+            font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .electro-hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 0;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            color: var(--primary-green);
         }
         
         .electro-content {
@@ -418,11 +397,16 @@
         
         /* --- Responsive --- */
         @media (max-width: 992px) {
-            .electro-hero-content h1 {
-                font-size: 2.5rem;
+            .electro-content-grid {
+                grid-template-columns: 1fr;
             }
-            .electro-hero-content p {
-                font-size: 1.1rem;
+            .electro-image {
+                order: -1;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .electro-image img {
+                max-width: 450px;
             }
             .highlights-grid {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -446,15 +430,6 @@
             .section-title::before, .section-title::after {
                 width: 50px;
             }
-            .electro-hero {
-                height: 400px;
-            }
-            .electro-hero-content h1 {
-                font-size: 2rem;
-            }
-            .electro-hero-content p {
-                font-size: 1rem;
-            }
             .electro-text-container h3 {
                 font-size: 1.2rem;
             }
@@ -473,15 +448,6 @@
             }
             .section-title::before, .section-title::after {
                 width: 30px;
-            }
-            .electro-hero {
-                height: 300px;
-            }
-            .electro-hero-content h1 {
-                font-size: 1.8rem;
-            }
-            .electro-hero-content p {
-                font-size: 0.9rem;
             }
             .electro-text-container h3 {
                 font-size: 1.1rem;
@@ -512,9 +478,8 @@
                                 <a href="acupunctureservice.html" role="menuitem">Acupuncture Therapy</a>
                                 <a href="electro.html" role="menuitem" aria-current="page">Electroacupuncture</a>
                                 <a href="cupping.html" role="menuitem">Cupping Therapy</a>
-                                <a href="concioustherpy.html" role="menuitem">Consciousness Therapy</a>
+                                <a href="concioustherpy.html" role="menuitem">Medical Intuitive and Consciousness Therapy</a>
                                 <a href="laser.html" role="menuitem">Laser Therapy</a>
-                                <a href="Shamanic.html" role="menuitem">Shamanic Healing</a>
                             </div>
                         </li>
                         <li><a href="Aboutus.html">About Us</a></li>
@@ -530,41 +495,39 @@
     </header>
 
     <main role="main">
-        <div class="electro-hero" aria-label="Electroacupuncture treatment hero section">
-            <div class="electro-hero-content">
-                <h1>Electroacupuncture</h1>
-                <p>Advanced Treatment with Stem Cell Activation</p>
-            </div>
-        </div>
-        
         <section class="electro-content" aria-labelledby="electro-content-title">
             <div class="container">
-                <h2 id="electro-content-title" class="section-title">Advanced Electroacupuncture Treatment</h2>
-                <div class="electro-text-container">
-                    <h3>Research-Based Treatment</h3>
-                    <p>Researchers from Indiana University School of Medicine produced a publication online March 16th, 2017 in the journal <a href="#" target="_blank" rel="noopener">Stem Cells</a> that provides the most comprehensive picture yet of how electroacupuncture stimulates the brain, allowing for the release of stem cells, and adds new insight to the cells' healing properties.</p>
-                    
-                    <p>This study demonstrates how electroacupuncture results in the release of reparative mesenchymal stem cells into the blood stream. Combined with our other treatments like <a href="cupping.html">cupping therapy</a> and <a href="concioustherpy.html">consciousness therapy</a>, we provide comprehensive holistic healing.</p>
-                    
-                    <p>They found that stem cells were mobilized and released into the brain within 2 hours of treatment.</p>
-                    
-                    <p>The effects of electroacupuncture are lasting and cumulative. Consistent treatment creates a better environment to allow the site of injury to heal.</p>
-                    
-                    <p>Researchers also found electroacupuncture treatments resulted in higher pain tolerance thresholds for injury-induced pain as well as considerable increases in the presence of a type of collagen that promotes tendon repair and leads to faster healing time.</p>
-                    
-                    <p>Electroacupuncture stimulates the brain to facilitate the release of stem cells and adds new insight relating to the cells' healing properties.</p>
-                    
-                    <p>Electroacupuncture is a form of acupuncture that uses a small electrical current to augment the ancient Chinese medical practice of inserting fine needles into the skin at pre-determined points throughout the body.</p>
-                    
-                    <p>For the study, a team of more than 40 scientists at institutions in the United States and South Korea was led by four senior authors including IU School of Medicine's Maria B. Grant, MD, Marilyn Glick Professor of Ophthalmology and co-corresponding author; Mervin C. Yoder, MD, IU Distinguished Professor, Richard and Pauline Klingler Professor of Pediatrics, associate dean for entrepreneurial research at IU School of Medicine, director of the Herman B Wells Center for Pediatric Research and co-corresponding author; and Fletcher A. White, PhD, Vergil K. Stoelting Chair of Anesthesia, professor of anesthesia, pharmacology and toxicology.</p>
-                    
-                    <p>"This work is a classic example of the power of team science, where investigators in different institutions with specific expertise worked together to unravel the complexity of how electroacupuncture works to help the body respond to stressors," said Dr. Yoder.</p>
-                    
-                    <p>The researchers performed a series of lab tests involving humans, horses and rodents that follow the effects of electroacupuncture from the stimulus of the needle all the way to the brain, resulting in the release of reparative mesenchymal stem cells (MSCs) into the bloodstream.</p>
-                    
-                    <p>Depending on the species, electroacupuncture led to activation of the hypothalamus -- a part of the brain that controls the nervous system and involuntary bodily functions such as heart rate and digestion -- within nine to 22 minutes. The stem cells were mobilized within two hours.</p>
-                    
-                    <p>"The acupuncture stimulus we're giving these animals has a rapid effect on the neuroanatomical pathways that connect the stimulus points in the arm to responsive neurons in the spinal cord and into a region in the brain called the hypothalamus. In turn, the hypothalamus directs outgoing signals to stem cell niches resulting in their release," said Dr. White, who is a neuroscientist at the Richard L. Roudebush VA Medical Center in Indianapolis.</p>
+                <h1 id="electro-content-title" class="section-title">Electroacupuncture</h1>
+                <div class="electro-content-grid">
+                    <div class="electro-text">
+                        <h3>Research-Based Treatment</h3>
+                        <p>Researchers from Indiana University School of Medicine produced a publication online March 16th, 2017 in the journal <a href="#" target="_blank" rel="noopener">Stem Cells</a> that provides the most comprehensive picture yet of how electroacupuncture stimulates the brain, allowing for the release of stem cells, and adds new insight to the cells' healing properties.</p>
+                        
+                        <p>This study demonstrates how electroacupuncture results in the release of reparative mesenchymal stem cells into the blood stream. Combined with our other treatments like <a href="cupping.html">cupping therapy</a> and <a href="concioustherpy.html">consciousness therapy</a>, we provide comprehensive holistic healing.</p>
+                        
+                        <p>They found that stem cells were mobilized and released into the brain within 2 hours of treatment.</p>
+                        
+                        <p>The effects of electroacupuncture are lasting and cumulative. Consistent treatment creates a better environment to allow the site of injury to heal.</p>
+                        
+                        <p>Researchers also found electroacupuncture treatments resulted in higher pain tolerance thresholds for injury-induced pain as well as considerable increases in the presence of a type of collagen that promotes tendon repair and leads to faster healing time.</p>
+                        
+                        <p>Electroacupuncture stimulates the brain to facilitate the release of stem cells and adds new insight relating to the cells' healing properties.</p>
+                        
+                        <p>Electroacupuncture is a form of acupuncture that uses a small electrical current to augment the ancient Chinese medical practice of inserting fine needles into the skin at pre-determined points throughout the body.</p>
+                        
+                        <p>For the study, a team of more than 40 scientists at institutions in the United States and South Korea was led by four senior authors including IU School of Medicine's Maria B. Grant, MD, Marilyn Glick Professor of Ophthalmology and co-corresponding author; Mervin C. Yoder, MD, IU Distinguished Professor, Richard and Pauline Klingler Professor of Pediatrics, associate dean for entrepreneurial research at IU School of Medicine, director of the Herman B Wells Center for Pediatric Research and co-corresponding author; and Fletcher A. White, PhD, Vergil K. Stoelting Chair of Anesthesia, professor of anesthesia, pharmacology and toxicology.</p>
+                        
+                        <p>"This work is a classic example of the power of team science, where investigators in different institutions with specific expertise worked together to unravel the complexity of how electroacupuncture works to help the body respond to stressors," said Dr. Yoder.</p>
+                        
+                        <p>The researchers performed a series of lab tests involving humans, horses and rodents that follow the effects of electroacupuncture from the stimulus of the needle all the way to the brain, resulting in the release of reparative mesenchymal stem cells (MSCs) into the bloodstream.</p>
+                        
+                        <p>Depending on the species, electroacupuncture led to activation of the hypothalamus -- a part of the brain that controls the nervous system and involuntary bodily functions such as heart rate and digestion -- within nine to 22 minutes. The stem cells were mobilized within two hours.</p>
+                        
+                        <p>"The acupuncture stimulus we're giving these animals has a rapid effect on the neuroanatomical pathways that connect the stimulus points in the arm to responsive neurons in the spinal cord and into a region in the brain called the hypothalamus. In turn, the hypothalamus directs outgoing signals to stem cell niches resulting in their release," said Dr. White, who is a neuroscientist at the Richard L. Roudebush VA Medical Center in Indianapolis.</p>
+                    </div>
+                    <div class="electro-image">
+                        <img src="images/Screenshot 2025-08-04 at 19.01.34.png" alt="Dr. Yasmin Harounian L.Ac performing electroacupuncture treatment in her Los Angeles clinic" title="Electroacupuncture Treatment by Dr. Yasmin Harounian" loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>
@@ -631,4 +594,3 @@
 
 </body>
 </html>
-
